@@ -1,0 +1,41 @@
+\begin{table}[H]
+  \centering
+  \caption{Desempeño en el conjunto de prueba, pobreza multidimensional (IPM), 2013$\to$2016.}
+  \label{tab:desempeno_pr_ipm}
+  \footnotesize
+  \setlength{\tabcolsep}{4pt}
+  \begin{tabular}{l ccc ccc cc}
+    \toprule
+    & & & & \multicolumn{3}{c}{\textbf{Umbral F$_2$}} & \multicolumn{2}{c}{\textbf{Decil superior}} \\
+    \cmidrule(lr){5-7}\cmidrule(lr){8-9}
+    \textbf{Modelo} & \textbf{AUC-PR} & \textbf{IC95\%} & \textbf{AUC-ROC} & \textbf{Rec.} & \textbf{Prec.} & \textbf{F$_1$} & \textbf{Prec.} & \textbf{Rec.} \\
+    \midrule
+    \multicolumn{9}{l}{\textit{Sin ingreso ni gasto (Modelo B)}} \\
+    \quad \emph{Elastic net} & 0.218 & 0.19--0.25 & 0.730 & 0.71 & 0.17 & 0.27 & 0.25 & 0.26 \\
+    \quad Random Forest & 0.222 & 0.19--0.25 & 0.736 & 0.75 & 0.17 & 0.27 & 0.27 & 0.28 \\
+    \quad XGBoost & 0.219 & 0.19--0.25 & 0.729 & 0.92 & 0.13 & 0.23 & 0.26 & 0.27 \\
+    \quad LightGBM & 0.216 & 0.19--0.25 & 0.730 & 0.73 & 0.17 & 0.28 & 0.25 & 0.26 \\
+    \quad HistGradientBoosting & 0.230 & 0.20--0.27 & 0.739 & 0.62 & 0.19 & 0.29 & 0.27 & 0.27 \\
+    \addlinespace
+    \multicolumn{9}{l}{\textit{Con ingreso y gasto (Modelo A)}} \\
+    \quad \emph{Elastic net} & 0.218 & 0.19--0.25 & 0.730 & 0.72 & 0.16 & 0.27 & 0.26 & 0.27 \\
+    \quad Random Forest & 0.221 & 0.19--0.25 & 0.729 & 0.64 & 0.18 & 0.28 & 0.25 & 0.26 \\
+    \quad XGBoost & 0.219 & 0.19--0.25 & 0.724 & 0.83 & 0.14 & 0.24 & 0.25 & 0.26 \\
+    \quad LightGBM & 0.233 & 0.20--0.27 & 0.741 & 0.67 & 0.18 & 0.29 & 0.26 & 0.27 \\
+    \quad HistGradientBoosting & 0.230 & 0.20--0.27 & 0.740 & 0.61 & 0.20 & 0.30 & 0.27 & 0.28 \\
+    \bottomrule
+  \end{tabular}
+  \begin{minipage}{0.95\textwidth}
+    \vspace{4pt}
+    \footnotesize \textit{Nota:} AUC-PR: área bajo la curva de
+    \emph{precision}-\emph{recall}, estimada como \emph{average precision};
+    un modelo que asigna el riesgo al azar obtiene 0.097, la
+    proporción de hogares vulnerables, y 0.5 de AUC-ROC. IC95\%:
+    \emph{bootstrap} de 2{,}000 remuestras por comunidad. Umbral F$_2$:
+    métricas al umbral elegido por validación cruzada maximizando F$_2$.
+    Decil superior: si un programa atiende al 10\% de los hogares con
+    mayor riesgo predicho. Rec.: \emph{recall}; Prec.: \emph{precision}.
+    5{,}571 hogares no pobres en 2013; una estimación por modelo.
+    Fuente: cálculos propios.
+  \end{minipage}
+\end{table}

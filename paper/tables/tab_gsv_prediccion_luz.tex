@@ -1,0 +1,21 @@
+\begin{table}[H]
+  \centering
+  \caption{Predicción de DMSP-OLS a partir de las fotos de Google Street View y estabilidad en el tiempo, 2013 (exploratorio).}
+  \label{tab:gsv_prediccion_luz}
+  \footnotesize
+  \setlength{\tabcolsep}{6pt}
+  \begin{tabular}{lccc}
+    \toprule
+    \textbf{Modelo de imagen} & \shortstack{\textbf{$R^2$, ventana}\\\textbf{2011--2013}} & \shortstack{\textbf{$R^2$, ventana}\\\textbf{2011--2015}} & \shortstack{\textbf{Correlación}\\\textbf{entre olas}} \\
+    \midrule
+    CLIP & 0.699 & 0.737 & +0.197 \\
+    VGG19 & 0.634 & 0.709 & $-$0.160 \\
+    ResNet50 & 0.702 & 0.745 & $-$0.152 \\
+    Places365 & 0.738 & 0.771 & +0.177 \\
+    \bottomrule
+  \end{tabular}
+  \begin{minipage}{0.95\textwidth}
+    \vspace{4pt}
+    \footnotesize \textit{Nota:} $R^2$ fuera de muestra de predecir el valor de DMSP-OLS de la zona a partir de la representación de la foto ($n=830$ hogares con la ventana original y $n=1{,}280$ con la ampliada). Correlación entre olas: del primer componente de la representación para los mismos hogares ($n=87$), comparable con 0.958 de DMSP-OLS y 0.600 de los bienes durables. Fuente: cálculos propios.
+  \end{minipage}
+\end{table}

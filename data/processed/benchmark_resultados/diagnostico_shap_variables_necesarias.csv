@@ -1,0 +1,11 @@
+algoritmo,especificacion,n_variables_originales,pct_shap_top10,n_variables_para_80pct
+HistGradientBoosting,A,169,0.693,15
+LightGBM,A,169,0.4436,37
+Logistica,A,169,0.4385,28
+Random Forest,A,169,0.5983,32
+XGBoost,A,169,0.5872,23
+HistGradientBoosting,B,165,0.6391,18
+LightGBM,B,165,0.7163,14
+Logistica,B,165,0.4581,28
+Random Forest,B,165,0.5492,34
+XGBoost,B,165,0.5472,26

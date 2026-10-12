@@ -1,0 +1,94 @@
+{\footnotesize
+\captionsetup{font=normalsize}
+\setlength{\tabcolsep}{4pt}
+\begin{longtable}{lllc>{\raggedright\arraybackslash}p{0.36\textwidth}}
+  \caption{Hiperparámetros finales, estrategia de balanceo y umbral de clasificación de los modelos reportados.}
+  \label{tab:hiperparametros} \\
+  \toprule
+  \textbf{Algoritmo} & \textbf{Espec.} & \textbf{Balanceo} & \textbf{Umbral} & \textbf{Hiperparámetros} \\
+  \midrule
+  \endfirsthead
+  \toprule
+  \textbf{Algoritmo} & \textbf{Espec.} & \textbf{Balanceo} & \textbf{Umbral} & \textbf{Hiperparámetros} \\
+  \midrule
+  \endhead
+  \bottomrule
+  \endlastfoot
+  \multicolumn{5}{l}{\textit{Pobreza monetaria, conjunto de prueba 2013$\to$2016}} \\*
+  Logística regularizada & A & balanced & 0.37 & C = 0.00603; l1\_ratio = 0.156 \\
+  Logística regularizada & B & balanced & 0.35 & C = 0.00603; l1\_ratio = 0.156 \\
+  Logística regularizada & A + DMSP & balanced & 0.37 & C = 0.00603; l1\_ratio = 0.156 \\
+  Logística regularizada & B + DMSP & balanced & 0.35 & C = 0.00603; l1\_ratio = 0.156 \\
+  Random Forest & A & ninguno & 0.14 & max\_depth = 11; max\_features = 0.228; min\_samples\_leaf = 20; n\_estimators = 334 \\
+  Random Forest & B & balanced & 0.31 & max\_depth = 11; max\_features = 0.228; min\_samples\_leaf = 20; n\_estimators = 334 \\
+  Random Forest & A + DMSP & balanced & 0.26 & max\_depth = 8; max\_features = 0.234; min\_samples\_leaf = 25; n\_estimators = 493 \\
+  Random Forest & B + DMSP & balanced & 0.27 & max\_depth = 12; max\_features = 0.259; min\_samples\_leaf = 21; n\_estimators = 291 \\
+  XGBoost & A & ninguno & 0.11 & colsample\_bytree = 0.885; learning\_rate = 0.0165; max\_depth = 3; n\_estimators = 286; reg\_lambda = 1.66; subsample = 0.801 \\
+  XGBoost & B & ninguno & 0.13 & colsample\_bytree = 0.885; learning\_rate = 0.0165; max\_depth = 3; n\_estimators = 286; reg\_lambda = 1.66; subsample = 0.801 \\
+  XGBoost & A + DMSP & ninguno & 0.12 & colsample\_bytree = 0.885; learning\_rate = 0.0165; max\_depth = 3; n\_estimators = 286; reg\_lambda = 1.66; subsample = 0.801 \\
+  XGBoost & B + DMSP & ninguno & 0.13 & colsample\_bytree = 0.885; learning\_rate = 0.0165; max\_depth = 3; n\_estimators = 286; reg\_lambda = 1.66; subsample = 0.801 \\
+  LightGBM & A & ninguno & 0.10 & learning\_rate = 0.0785; max\_depth = 4; min\_child\_samples = 43; n\_estimators = 140; num\_leaves = 42; reg\_lambda = 5.32 \\
+  LightGBM & B & ninguno & 0.15 & learning\_rate = 0.0111; max\_depth = 4; min\_child\_samples = 30; n\_estimators = 143; num\_leaves = 48; reg\_lambda = 0.617 \\
+  LightGBM & A + DMSP & ninguno & 0.10 & learning\_rate = 0.0785; max\_depth = 4; min\_child\_samples = 43; n\_estimators = 140; num\_leaves = 42; reg\_lambda = 5.32 \\
+  LightGBM & B + DMSP & ninguno & 0.13 & learning\_rate = 0.0258; max\_depth = 3; min\_child\_samples = 5; n\_estimators = 225; num\_leaves = 16; reg\_lambda = 1.15 \\
+  HistGradientBoosting & A & balanced & 0.32 & l2\_regularization = 2.55; learning\_rate = 0.0129; max\_depth = 3; max\_iter = 228; max\_leaf\_nodes = 58 \\
+  HistGradientBoosting & B & ninguno & 0.14 & l2\_regularization = 2.55; learning\_rate = 0.0129; max\_depth = 3; max\_iter = 228; max\_leaf\_nodes = 58 \\
+  HistGradientBoosting & A + DMSP & balanced & 0.31 & l2\_regularization = 2.55; learning\_rate = 0.0129; max\_depth = 3; max\_iter = 228; max\_leaf\_nodes = 58 \\
+  HistGradientBoosting & B + DMSP & ninguno & 0.14 & l2\_regularization = 2.55; learning\_rate = 0.0129; max\_depth = 3; max\_iter = 228; max\_leaf\_nodes = 58 \\
+  \midrule
+  \multicolumn{5}{l}{\textit{Pobreza multidimensional (IPM), conjunto de prueba 2013$\to$2016}} \\*
+  Logística regularizada & A & ninguno & 0.10 & C = 0.0362; l1\_ratio = 0.52 \\
+  Logística regularizada & B & ninguno & 0.11 & C = 0.0362; l1\_ratio = 0.52 \\
+  Logística regularizada & A + DMSP & ninguno & 0.11 & C = 0.0362; l1\_ratio = 0.52 \\
+  Logística regularizada & B + DMSP & ninguno & 0.11 & C = 0.0362; l1\_ratio = 0.52 \\
+  Random Forest & A & balanced & 0.31 & max\_depth = 14; max\_features = 0.567; min\_samples\_leaf = 13; n\_estimators = 544 \\
+  Random Forest & B & balanced & 0.26 & max\_depth = 14; max\_features = 0.273; min\_samples\_leaf = 9; n\_estimators = 234 \\
+  Random Forest & A + DMSP & ninguno & 0.12 & max\_depth = 9; max\_features = 0.387; min\_samples\_leaf = 25; n\_estimators = 492 \\
+  Random Forest & B + DMSP & ninguno & 0.11 & max\_depth = 12; max\_features = 0.259; min\_samples\_leaf = 21; n\_estimators = 291 \\
+  XGBoost & A & ninguno & 0.11 & colsample\_bytree = 0.621; learning\_rate = 0.0258; max\_depth = 3; n\_estimators = 484; reg\_lambda = 0.301; subsample = 0.658 \\
+  XGBoost & B & ninguno & 0.09 & colsample\_bytree = 0.621; learning\_rate = 0.0258; max\_depth = 3; n\_estimators = 484; reg\_lambda = 0.301; subsample = 0.658 \\
+  XGBoost & A + DMSP & ninguno & 0.10 & colsample\_bytree = 0.885; learning\_rate = 0.0165; max\_depth = 3; n\_estimators = 286; reg\_lambda = 1.66; subsample = 0.801 \\
+  XGBoost & B + DMSP & ninguno & 0.11 & colsample\_bytree = 0.885; learning\_rate = 0.0165; max\_depth = 3; n\_estimators = 286; reg\_lambda = 1.66; subsample = 0.801 \\
+  LightGBM & A & ninguno & 0.11 & learning\_rate = 0.013; max\_depth = 5; min\_child\_samples = 26; n\_estimators = 383; num\_leaves = 16; reg\_lambda = 1.77 \\
+  LightGBM & B & ninguno & 0.08 & learning\_rate = 0.0357; max\_depth = 7; min\_child\_samples = 19; n\_estimators = 206; num\_leaves = 22; reg\_lambda = 1.58 \\
+  LightGBM & A + DMSP & ninguno & 0.10 & learning\_rate = 0.013; max\_depth = 5; min\_child\_samples = 26; n\_estimators = 383; num\_leaves = 16; reg\_lambda = 1.77 \\
+  LightGBM & B + DMSP & ninguno & 0.10 & learning\_rate = 0.0258; max\_depth = 3; min\_child\_samples = 5; n\_estimators = 225; num\_leaves = 16; reg\_lambda = 1.15 \\
+  HistGradientBoosting & A & ninguno & 0.11 & l2\_regularization = 4.38; learning\_rate = 0.0836; max\_depth = 3; max\_iter = 233; max\_leaf\_nodes = 42 \\
+  HistGradientBoosting & B & ninguno & 0.10 & l2\_regularization = 4.38; learning\_rate = 0.0836; max\_depth = 3; max\_iter = 233; max\_leaf\_nodes = 42 \\
+  HistGradientBoosting & A + DMSP & ninguno & 0.10 & l2\_regularization = 4.38; learning\_rate = 0.0836; max\_depth = 3; max\_iter = 233; max\_leaf\_nodes = 42 \\
+  HistGradientBoosting & B + DMSP & ninguno & 0.10 & l2\_regularization = 4.38; learning\_rate = 0.0836; max\_depth = 3; max\_iter = 233; max\_leaf\_nodes = 42 \\
+  \midrule
+  \multicolumn{5}{l}{\textit{Tres fuentes geoespaciales, pobreza monetaria, validación cruzada en 2010$\to$2013}} \\*
+  Logística regularizada & A & balanced & 0.37 & C = 0.00603; l1\_ratio = 0.156 \\
+  Logística regularizada & B & balanced & 0.35 & C = 0.00603; l1\_ratio = 0.156 \\
+  Logística regularizada & A + 3 fuentes & oversampling & 0.37 & C = 0.00277; l1\_ratio = 0.196 \\
+  Logística regularizada & B + 3 fuentes & ninguno & 0.14 & C = 0.00811; l1\_ratio = 0.183 \\
+  XGBoost & A & ninguno & 0.11 & colsample\_bytree = 0.885; learning\_rate = 0.0165; max\_depth = 3; n\_estimators = 286; reg\_lambda = 1.66; subsample = 0.801 \\
+  XGBoost & B & ninguno & 0.13 & colsample\_bytree = 0.885; learning\_rate = 0.0165; max\_depth = 3; n\_estimators = 286; reg\_lambda = 1.66; subsample = 0.801 \\
+  XGBoost & A + 3 fuentes & ninguno & 0.13 & colsample\_bytree = 0.885; learning\_rate = 0.0165; max\_depth = 3; n\_estimators = 286; reg\_lambda = 1.66; subsample = 0.801 \\
+  XGBoost & B + 3 fuentes & ninguno & 0.13 & colsample\_bytree = 0.885; learning\_rate = 0.0165; max\_depth = 3; n\_estimators = 286; reg\_lambda = 1.66; subsample = 0.801 \\
+  HistGradientBoosting & A & balanced & 0.32 & l2\_regularization = 2.55; learning\_rate = 0.0129; max\_depth = 3; max\_iter = 228; max\_leaf\_nodes = 58 \\
+  HistGradientBoosting & B & ninguno & 0.14 & l2\_regularization = 2.55; learning\_rate = 0.0129; max\_depth = 3; max\_iter = 228; max\_leaf\_nodes = 58 \\
+  HistGradientBoosting & A + 3 fuentes & balanced & 0.32 & l2\_regularization = 2.55; learning\_rate = 0.0129; max\_depth = 3; max\_iter = 228; max\_leaf\_nodes = 58 \\
+  HistGradientBoosting & B + 3 fuentes & ninguno & 0.14 & l2\_regularization = 2.55; learning\_rate = 0.0129; max\_depth = 3; max\_iter = 228; max\_leaf\_nodes = 58 \\
+  \midrule
+  \multicolumn{5}{l}{\textit{Multiclase (cuatro grupos), pobreza monetaria, conjunto de prueba 2013$\to$2016}} \\*
+  Logística regularizada & A & ninguno & -- & C = 0.0746; l1\_ratio = 0.951 \\
+  Logística regularizada & B & ninguno & -- & C = 0.0746; l1\_ratio = 0.951 \\
+  Random Forest & A & ninguno & -- & max\_depth = 11; max\_features = 0.228; min\_samples\_leaf = 20; n\_estimators = 334 \\
+  Random Forest & B & ninguno & -- & max\_depth = 12; max\_features = 0.27; min\_samples\_leaf = 8; n\_estimators = 400 \\
+  XGBoost & A & ninguno & -- & colsample\_bytree = 0.621; learning\_rate = 0.0258; max\_depth = 3; n\_estimators = 484; reg\_lambda = 0.301; subsample = 0.658 \\
+  XGBoost & B & ninguno & -- & colsample\_bytree = 0.824; learning\_rate = 0.0368; max\_depth = 5; n\_estimators = 356; reg\_lambda = 2.78; subsample = 0.694 \\
+  LightGBM & A & ninguno & -- & learning\_rate = 0.0258; max\_depth = 3; min\_child\_samples = 5; n\_estimators = 225; num\_leaves = 16; reg\_lambda = 1.15 \\
+  LightGBM & B & ninguno & -- & learning\_rate = 0.0785; max\_depth = 4; min\_child\_samples = 43; n\_estimators = 140; num\_leaves = 42; reg\_lambda = 5.32 \\
+  HistGradientBoosting & A & ninguno & -- & l2\_regularization = 2.55; learning\_rate = 0.0129; max\_depth = 3; max\_iter = 228; max\_leaf\_nodes = 58 \\
+  HistGradientBoosting & B & ninguno & -- & l2\_regularization = 2.58; learning\_rate = 0.0189; max\_depth = 5; max\_iter = 227; max\_leaf\_nodes = 42 \\
+  Red neuronal (MLP) & A & ninguno & -- & alpha = 0.0207; hidden\_layer\_sizes = (64); learning\_rate\_init = 0.00852 \\
+  Red neuronal (MLP) & B & ninguno & -- & alpha = 3.08e-05; hidden\_layer\_sizes = (128, 64); learning\_rate\_init = 0.00464 \\
+\end{longtable}
+\vspace{-\LTpost}
+\textit{Nota:} Espec.: especificación (A con ingreso y gasto del hogar, B sin
+ellos). Umbral: promedio sobre las semillas del umbral elegido por validación
+cruzada maximizando F$_2$; ``--'': sin umbral (el modelo multiclase asigna el
+grupo más probable) o no registrado. Fuente: cálculos propios.\par
+}

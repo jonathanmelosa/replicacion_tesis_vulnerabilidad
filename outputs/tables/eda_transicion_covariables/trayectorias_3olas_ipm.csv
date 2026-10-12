@@ -1,0 +1,5 @@
+trayectoria,n_hogares,peso_total,pct_n,pct_ponderado
+Nunca cae,4381,4472.16917364148,81.2,82.3
+Cae tarde (solo en 2016),357,322.54893199742423,6.6,5.9
+Entra y sale (transitorio),445,429.2841215326204,8.2,7.9
+Entra y se queda (persistente),214,211.93725134343518,4.0,3.9

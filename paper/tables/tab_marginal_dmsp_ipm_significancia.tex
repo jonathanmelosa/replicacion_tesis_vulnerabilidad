@@ -1,0 +1,35 @@
+\begin{table}[H]
+  \centering
+  \caption{Contribución marginal de DMSP-OLS en el conjunto de prueba,
+  pobreza multidimensional (IPM), 2013$\to$2016.}
+  \label{tab:marginal_dmsp_ipm_significancia}
+  \footnotesize
+  \setlength{\tabcolsep}{6pt}
+  \begin{tabular}{llcccc}
+    \toprule
+    \textbf{Algoritmo} & \textbf{Espec.} & \textbf{AUC base} & \textbf{AUC +DMSP} & $\boldsymbol{\Delta}$\textbf{AUC} & $\boldsymbol{\Delta}$\textbf{Prec.-top10} \\
+    \midrule
+    XGBoost                  & A & 0.725 & 0.736 & \textbf{+0.013} & +0.022 \\
+    Random Forest            & A & 0.729 & 0.729 & +0.001 & +0.004 \\
+    LightGBM                 & A & 0.741 & 0.745 & +0.004 & +0.005 \\
+    HistGradientBoosting     & A & 0.740 & 0.738 & $-$0.002 & +0.002 \\
+    Logística regularizada   & A & 0.730 & 0.730 & $-$0.000 & +0.009 \\
+    \addlinespace
+    XGBoost                  & B & 0.728 & 0.746 & \textbf{+0.020} & +0.016 \\
+    Random Forest            & B & 0.735 & 0.732 & $-$0.004 & +0.015 \\
+    LightGBM                 & B & 0.730 & 0.747 & \textbf{+0.017} & +0.021 \\
+    HistGradientBoosting     & B & 0.739 & 0.740 & +0.002 & $-$0.007 \\
+    Logística regularizada   & B & 0.730 & 0.730 & $-$0.000 & +0.011 \\
+    \bottomrule
+  \end{tabular}
+  \begin{minipage}{0.95\textwidth}
+    \vspace{4pt}
+    \footnotesize \textit{Nota:} Entrenamiento en 2010$\to$2013. AUC: promedio de 5 semillas.
+    $\Delta$AUC: \emph{bootstrap} pareado sobre el conjunto de prueba
+    (una semilla); en \textbf{negrita}, diferencias cuyo IC95\% no
+    cruza cero. Intervalos, valores $p$ y corrección por
+    conglomerados de comunidad en la
+    Tabla~\ref{tab:significancia_dmsp_ipm} del
+    Anexo~\ref{apx:marginal_dmsp}. Fuente: cálculos propios.
+  \end{minipage}
+\end{table}

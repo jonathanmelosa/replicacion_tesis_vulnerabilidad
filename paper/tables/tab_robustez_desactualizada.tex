@@ -1,0 +1,51 @@
+\begin{table}[H]
+  \centering
+  \caption{AUC-PR con la encuesta de 2013 y con la de 2010, y cambio al agregar DMSP-OLS
+  de 2013, pobreza monetaria e IPM, 2013$\to$2016.}
+  \label{tab:robustez_desactualizada}
+  \footnotesize
+  \setlength{\tabcolsep}{4pt}
+  \begin{tabular}{l cc cc}
+    \toprule
+    \textbf{Modelo} & \textbf{Encuesta 2013} & \textbf{Encuesta 2010} & \textbf{2010 menos 2013} & \textbf{Con DMSP-OLS de 2013} \\
+    \midrule
+    \multicolumn{5}{l}{\textit{Pobreza monetaria, sin ingreso ni gasto (Modelo B)}} \\
+    \quad \emph{Elastic net} (principal) & 0.435 & 0.396 & $-$0.039\textsuperscript{*} ($-$0.064, $-$0.008) & $-$0.001 ($-$0.003, 0.000) \\
+    \quad Random Forest & 0.420 & 0.399 & $-$0.021 ($-$0.045, 0.006) & $-$0.011 ($-$0.022, 0.003) \\
+    \quad XGBoost & 0.421 & 0.413 & $-$0.007 ($-$0.036, 0.021) & $-$0.002 ($-$0.010, 0.006) \\
+    \quad LightGBM & 0.389 & 0.393 & 0.004 ($-$0.026, 0.034) & 0.017 ($-$0.002, 0.035) \\
+    \quad HistGradientBoosting & 0.413 & 0.402 & $-$0.011 ($-$0.042, 0.019) & $-$0.004 ($-$0.013, 0.005) \\
+    \addlinespace
+    \multicolumn{5}{l}{\textit{Pobreza monetaria, con ingreso y gasto (Modelo A)}} \\
+    \quad \emph{Elastic net} & 0.433 & 0.398 & $-$0.035\textsuperscript{*} ($-$0.063, $-$0.005) & $-$0.000 ($-$0.002, 0.002) \\
+    \quad Random Forest & 0.425 & 0.418 & $-$0.007 ($-$0.042, 0.028) & $-$0.014\textsuperscript{*} ($-$0.026, $-$0.000) \\
+    \quad XGBoost & 0.436 & 0.428 & $-$0.008 ($-$0.041, 0.026) & $-$0.003 ($-$0.009, 0.004) \\
+    \quad LightGBM & 0.418 & 0.413 & $-$0.005 ($-$0.039, 0.028) & $-$0.004 ($-$0.017, 0.008) \\
+    \quad HistGradientBoosting & 0.431 & 0.424 & $-$0.007 ($-$0.041, 0.025) & $-$0.006 ($-$0.015, 0.004) \\
+    \addlinespace
+    \multicolumn{5}{l}{\textit{IPM, sin ingreso ni gasto (Modelo B)}} \\
+    \quad \emph{Elastic net} & 0.218 & 0.245 & 0.027\textsuperscript{*} (0.003, 0.053) & $-$0.001 ($-$0.003, 0.001) \\
+    \quad Random Forest & 0.226 & 0.244 & 0.018 ($-$0.006, 0.045) & 0.006 ($-$0.007, 0.017) \\
+    \quad XGBoost & 0.222 & 0.249 & 0.027\textsuperscript{*} (0.000, 0.054) & 0.007 ($-$0.004, 0.016) \\
+    \quad LightGBM & 0.216 & 0.235 & 0.019 ($-$0.007, 0.045) & 0.012 ($-$0.002, 0.026) \\
+    \quad HistGradientBoosting & 0.230 & 0.239 & 0.008 ($-$0.020, 0.033) & $-$0.002 ($-$0.010, 0.005) \\
+    \addlinespace
+    \multicolumn{5}{l}{\textit{IPM, con ingreso y gasto (Modelo A)}} \\
+    \quad \emph{Elastic net} & 0.218 & 0.246 & 0.028\textsuperscript{*} (0.001, 0.054) & $-$0.001 ($-$0.003, 0.001) \\
+    \quad Random Forest & 0.222 & 0.232 & 0.010 ($-$0.013, 0.034) & 0.007 ($-$0.002, 0.018) \\
+    \quad XGBoost & 0.220 & 0.247 & 0.027\textsuperscript{*} (0.000, 0.052) & 0.004 ($-$0.005, 0.014) \\
+    \quad LightGBM & 0.233 & 0.233 & $-$0.000 ($-$0.026, 0.027) & 0.002 ($-$0.005, 0.009) \\
+    \quad HistGradientBoosting & 0.230 & 0.240 & 0.009 ($-$0.018, 0.035) & $-$0.000 ($-$0.009, 0.008) \\
+    \bottomrule
+  \end{tabular}
+  \begin{minipage}{0.95\textwidth}
+    \vspace{4pt}
+    \footnotesize \textit{Nota:} Modelos estimados con 2010$\to$2013 y aplicados a los
+    hogares no pobres en 2013 con la encuesta de 2013 o con la de 2010. 2010 menos 2013:
+    diferencia de AUC-PR entre las dos encuestas (negativa si la encuesta vieja predice
+    peor). Con DMSP-OLS de 2013: cambio en el AUC-PR al agregar DMSP-OLS de 2013 a la
+    encuesta de 2010. Entre paréntesis, IC95\% por \emph{bootstrap} pareado de 2{,}000
+    remuestras por comunidad. \textsuperscript{*}: el intervalo excluye el cero.
+    Fuente: cálculos propios.
+  \end{minipage}
+\end{table}

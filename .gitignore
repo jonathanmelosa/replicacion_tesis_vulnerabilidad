@@ -1,0 +1,19 @@
+__pycache__/
+.DS_Store
+.venv/
+logs/
+
+# Microdatos de la ELCA (públicos, pero no se redistribuyen: los descarga run_all.py)
+data/interim/raw/
+
+# Límites de GADM (licencia sin redistribución: los descarga src/descargar_gadm.py)
+data/interim/geo_referencia/gadm41_*
+
+# Cualquier archivo por hogar que se genere al correr los niveles "elca" o "completo"
+*.parquet
+data/processed/SALE_*/
+data/processed/embeddings/
+
+# Credenciales de Google Earth Engine
+**/credenciales/
+*service_account*.json

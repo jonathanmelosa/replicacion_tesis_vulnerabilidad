@@ -1,0 +1,56 @@
+\begin{table}[H]
+  \centering
+  \caption{Cambio en el AUC-ROC al agregar DMSP-OLS por subgrupo, pobreza multidimensional (IPM), 2013$\to$2016.}
+  \label{tab:heterogeneidad_ipm}
+  \footnotesize
+  \setlength{\tabcolsep}{3pt}
+  \begin{tabular}{llrrrrrrr}
+    \toprule
+    \textbf{Eje} & \textbf{Grupo} & \textbf{Espec.} & $\boldsymbol{n}$ & \textbf{XGB} & \textbf{RF} & \textbf{LGBM} & \textbf{HGB} & \textbf{Log.} \\
+    \midrule
+    Zona & Rural & A & 2{,}452 & +0.012 & +0.006 & +0.010 & +0.005 & +0.001 \\
+     & Rural & B & 2{,}452 & +0.019 & +0.004 & \textbf{+0.032} & +0.009 & +0.001 \\
+    \addlinespace
+     & Urbano & A & 3{,}119 & +0.013 & $-$0.002 & +0.000 & $-$0.005 & $-$0.000 \\
+     & Urbano & B & 3{,}119 & +0.018 & $-$0.015 & +0.008 & $-$0.004 & +0.000 \\
+    \midrule
+    Cercanía a LP & Q1 (mas cerca de LP) & A & 1{,}393 & +0.009 & $-$0.005 & +0.003 & +0.003 & $-$0.001 \\
+     & Q1 (mas cerca de LP) & B & 1{,}393 & +0.015 & +0.001 & +0.012 & +0.003 & $-$0.001 \\
+    \addlinespace
+     & Q2 & A & 1{,}394 & \textbf{+0.024} & $-$0.006 & +0.010 & $-$0.012 & $-$0.000 \\
+     & Q2 & B & 1{,}394 & \textbf{+0.039} & $-$0.013 & \textbf{+0.032} & $-$0.006 & $-$0.000 \\
+    \addlinespace
+     & Q3 & A & 1{,}392 & \textbf{+0.025} & +0.009 & +0.002 & +0.009 & +0.003 \\
+     & Q3 & B & 1{,}392 & \textbf{+0.025} & $-$0.008 & \textbf{+0.030} & +0.006 & +0.003 \\
+    \addlinespace
+     & Q4 (mas lejos) & A & 1{,}392 & +0.013 & +0.011 & +0.003 & $-$0.009 & $-$0.004 \\
+     & Q4 (mas lejos) & B & 1{,}392 & +0.019 & $-$0.015 & $-$0.008 & +0.015 & $-$0.003 \\
+    \midrule
+    Estrato & Estrato 1 & A & 2{,}046 & +0.010 & +0.002 & +0.005 & +0.004 & $-$0.001 \\
+     & Estrato 1 & B & 2{,}046 & +0.018 & +0.004 & \textbf{+0.024} & $-$0.002 & $-$0.001 \\
+    \addlinespace
+     & Estrato 2 & A & 2{,}439 & \textbf{+0.020} & +0.003 & +0.007 & $-$0.008 & +0.002 \\
+     & Estrato 2 & B & 2{,}439 & \textbf{+0.027} & $-$0.006 & +0.015 & +0.005 & +0.002 \\
+    \addlinespace
+     & Estrato 3 & A & 889 & $-$0.007 & $-$0.006 & $-$0.006 & $-$0.005 & +0.002 \\
+     & Estrato 3 & B & 889 & +0.005 & \textbf{$-$0.031} & $-$0.003 & +0.009 & +0.003 \\
+    \midrule
+    Servicios y bienes & Tercil bajo & A & 1{,}858 & +0.014 & +0.003 & +0.008 & +0.001 & +0.001 \\
+     & Tercil bajo & B & 1{,}858 & \textbf{+0.021} & $-$0.003 & \textbf{+0.030} & +0.003 & +0.000 \\
+    \addlinespace
+     & Tercil medio & A & 1{,}977 & +0.007 & +0.004 & +0.002 & $-$0.006 & +0.000 \\
+     & Tercil medio & B & 1{,}977 & +0.018 & $-$0.004 & +0.019 & $-$0.001 & +0.000 \\
+    \addlinespace
+     & Tercil alto & A & 1{,}736 & \textbf{+0.034} & $-$0.001 & +0.004 & +0.001 & +0.000 \\
+     & Tercil alto & B & 1{,}736 & \textbf{+0.033} & \textbf{$-$0.030} & +0.009 & +0.005 & +0.000 \\
+    \bottomrule
+  \end{tabular}
+  \begin{minipage}{0.95\textwidth}
+    \vspace{4pt}
+    \footnotesize \textit{Nota:} Cambio en el AUC-ROC del conjunto de prueba al
+    agregar DMSP-OLS, por subgrupo. En \textbf{negrita}: $|\Delta|\geq 0.02$.
+    Se omiten los grupos con $n<30$. Espec.: especificación (A con ingreso y
+    gasto del hogar, B sin ellos). XGB: XGBoost; RF: Random Forest; LGBM:
+    LightGBM; HGB: HistGradientBoosting; Log.: logística regularizada. Fuente: cálculos propios.
+  \end{minipage}
+\end{table}

@@ -1,0 +1,33 @@
+\begin{table}[H]
+  \centering
+  \caption{Concentración de la importancia SHAP por algoritmo y
+  especificación, pobreza monetaria, 2013$\to$2016.}
+  \label{tab:shap_variables_necesarias}
+  \footnotesize
+  \setlength{\tabcolsep}{5pt}
+  \begin{tabular}{llccc}
+    \toprule
+    \textbf{Algoritmo} & \textbf{Espec.} & \textbf{\shortstack{Variables\\(total)}} & \textbf{\shortstack{\% SHAP en las\\10 primeras}} & \textbf{\shortstack{Variables para el\\80\% del SHAP}} \\
+    \midrule
+    HistGradientBoosting     & A & 169 & 69.3\% & 15 \\
+    XGBoost                  & A & 169 & 58.7\% & 23 \\
+    Logística regularizada   & A & 169 & 43.9\% & 28 \\
+    Random Forest            & A & 169 & 59.8\% & 32 \\
+    LightGBM                 & A & 169 & 44.4\% & 37 \\
+    \addlinespace
+    LightGBM                 & B & 165 & 71.6\% & 14 \\
+    HistGradientBoosting     & B & 165 & 63.9\% & 18 \\
+    XGBoost                  & B & 165 & 54.7\% & 26 \\
+    Logística regularizada   & B & 165 & 45.8\% & 28 \\
+    Random Forest            & B & 165 & 54.9\% & 34 \\
+    \bottomrule
+  \end{tabular}
+  \begin{minipage}{0.95\textwidth}
+    \vspace{4pt}
+    \footnotesize \textit{Nota:} Importancia SHAP calculada sobre el conjunto
+    de prueba. Variables originales: las \emph{dummies one-hot} y los
+    indicadores de faltante se suman a su variable de origen antes de
+    calcular la masa acumulada. Espec.: especificación (A con ingreso y
+    gasto del hogar, B sin ellos). Fuente: cálculos propios.
+  \end{minipage}
+\end{table}

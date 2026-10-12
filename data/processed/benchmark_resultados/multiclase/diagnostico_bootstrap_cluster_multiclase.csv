@@ -1,0 +1,37 @@
+algoritmo,par,n_hogares,n_clusters,n_boot_validas,auc_B4,auc_B4_ci95_low,auc_B4_ci95_high,auc_B4geoDMSP,delta_auc,delta_ci95_low,delta_ci95_high,p_valor,cruza_cero
+Red neuronal (MLP),nunca_pobre_vs_entra,6911,1889,2000,0.7434,0.7222,0.7644,0.7391,-0.0043,-0.013,0.0038,0.3,True
+Red neuronal (MLP),nunca_pobre_vs_sale,6911,1889,2000,0.8196,0.804,0.835,0.8174,-0.0022,-0.0087,0.0043,0.512,True
+Red neuronal (MLP),nunca_pobre_vs_siempre_pobre,6911,1889,2000,0.9105,0.9011,0.9195,0.9086,-0.0019,-0.0065,0.0028,0.4,True
+Red neuronal (MLP),entra_vs_sale,6911,1889,2000,0.5544,0.525,0.5817,0.5594,0.0049,-0.0162,0.0269,0.633,True
+Red neuronal (MLP),entra_vs_siempre_pobre,6911,1889,2000,0.6852,0.6617,0.7075,0.7087,0.0235,0.0075,0.0402,0.005,False
+Red neuronal (MLP),sale_vs_siempre_pobre,6911,1889,2000,0.613,0.594,0.6318,0.623,0.0101,-0.0066,0.0277,0.247,True
+Random Forest,nunca_pobre_vs_entra,6911,1889,2000,0.7491,0.7278,0.7701,0.7446,-0.0044,-0.0077,-0.0012,0.007,False
+Random Forest,nunca_pobre_vs_sale,6911,1889,2000,0.8129,0.7973,0.8287,0.811,-0.0019,-0.0044,0.0004,0.12,True
+Random Forest,nunca_pobre_vs_siempre_pobre,6911,1889,2000,0.9187,0.9097,0.927,0.9166,-0.0021,-0.0035,-0.0007,0.004,False
+Random Forest,entra_vs_sale,6911,1889,2000,0.5412,0.5119,0.5727,0.5355,-0.0057,-0.0191,0.0068,0.38,True
+Random Forest,entra_vs_siempre_pobre,6911,1889,2000,0.702,0.6794,0.7241,0.6935,-0.0085,-0.0185,0.0009,0.074,True
+Random Forest,sale_vs_siempre_pobre,6911,1889,2000,0.6108,0.5906,0.6295,0.6065,-0.0043,-0.0127,0.0039,0.327,True
+HistGradientBoosting (sklearn),nunca_pobre_vs_entra,6911,1889,2000,0.7517,0.7295,0.7725,0.7479,-0.0039,-0.0104,0.0026,0.228,True
+HistGradientBoosting (sklearn),nunca_pobre_vs_sale,6911,1889,2000,0.824,0.8082,0.8386,0.8284,0.0044,0.0,0.0087,0.05,False
+HistGradientBoosting (sklearn),nunca_pobre_vs_siempre_pobre,6911,1889,2000,0.9252,0.9167,0.9326,0.9249,-0.0003,-0.0029,0.0022,0.813,True
+HistGradientBoosting (sklearn),entra_vs_sale,6911,1889,2000,0.545,0.5169,0.5733,0.539,-0.006,-0.0261,0.0135,0.516,True
+HistGradientBoosting (sklearn),entra_vs_siempre_pobre,6911,1889,2000,0.6754,0.6523,0.6969,0.6671,-0.0083,-0.023,0.0061,0.286,True
+HistGradientBoosting (sklearn),sale_vs_siempre_pobre,6911,1889,2000,0.6048,0.5841,0.6246,0.602,-0.0028,-0.0145,0.0092,0.654,True
+XGBoost,nunca_pobre_vs_entra,6911,1889,2000,0.7521,0.7309,0.7735,0.7531,0.001,-0.003,0.005,0.641,True
+XGBoost,nunca_pobre_vs_sale,6911,1889,2000,0.8298,0.8157,0.8445,0.8289,-0.0009,-0.0037,0.0018,0.53,True
+XGBoost,nunca_pobre_vs_siempre_pobre,6911,1889,2000,0.9272,0.9192,0.9349,0.9268,-0.0005,-0.0022,0.0012,0.582,True
+XGBoost,entra_vs_sale,6911,1889,2000,0.5337,0.5045,0.564,0.5449,0.0112,-0.0057,0.0278,0.202,True
+XGBoost,entra_vs_siempre_pobre,6911,1889,2000,0.6763,0.6537,0.6981,0.681,0.0047,-0.0081,0.0176,0.496,True
+XGBoost,sale_vs_siempre_pobre,6911,1889,2000,0.5946,0.5735,0.615,0.6072,0.0126,0.0025,0.0226,0.011,False
+"Logistica regularizada (elastic net, benchmark)",nunca_pobre_vs_entra,6911,1889,2000,0.7343,0.714,0.7556,0.7337,-0.0006,-0.0019,0.0007,0.377,True
+"Logistica regularizada (elastic net, benchmark)",nunca_pobre_vs_sale,6911,1889,2000,0.806,0.7889,0.8213,0.8068,0.0008,-0.0003,0.0019,0.135,True
+"Logistica regularizada (elastic net, benchmark)",nunca_pobre_vs_siempre_pobre,6911,1889,2000,0.8959,0.8851,0.9063,0.8964,0.0005,-0.0004,0.0014,0.293,True
+"Logistica regularizada (elastic net, benchmark)",entra_vs_sale,6911,1889,2000,0.5623,0.5303,0.5925,0.5639,0.0016,-0.0029,0.0059,0.469,True
+"Logistica regularizada (elastic net, benchmark)",entra_vs_siempre_pobre,6911,1889,2000,0.6884,0.6649,0.7099,0.6875,-0.0009,-0.0047,0.0027,0.614,True
+"Logistica regularizada (elastic net, benchmark)",sale_vs_siempre_pobre,6911,1889,2000,0.6289,0.6079,0.6498,0.6259,-0.0029,-0.0078,0.0024,0.284,True
+LightGBM,nunca_pobre_vs_entra,6911,1889,2000,0.7542,0.7328,0.7755,0.7507,-0.0035,-0.0082,0.0011,0.138,True
+LightGBM,nunca_pobre_vs_sale,6911,1889,2000,0.8289,0.8132,0.8432,0.8314,0.0025,-0.0007,0.0055,0.102,True
+LightGBM,nunca_pobre_vs_siempre_pobre,6911,1889,2000,0.9274,0.9191,0.9351,0.9276,0.0002,-0.0016,0.002,0.821,True
+LightGBM,entra_vs_sale,6911,1889,2000,0.5433,0.5147,0.5747,0.552,0.0087,-0.0085,0.0256,0.315,True
+LightGBM,entra_vs_siempre_pobre,6911,1889,2000,0.6847,0.6616,0.7084,0.6972,0.0125,-0.0004,0.025,0.054,True
+LightGBM,sale_vs_siempre_pobre,6911,1889,2000,0.6029,0.5823,0.6232,0.614,0.0111,0.0002,0.022,0.048,False

@@ -1,0 +1,91 @@
+algoritmo,especificacion,comparacion,n_hogares,prevalencia,ap_ref,ap_var,delta_ap,delta_ap_ci95_low,delta_ap_ci95_high,delta_ap_cruza_cero,auc_ref,auc_var
+HistGradientBoosting,A,fila - hogar,6280,0.2162,0.4687,0.4683,-0.0004,-0.0038,0.0028,True,0.7681,0.7678
+HistGradientBoosting,A,fila - comunidad,6280,0.2162,0.4649,0.4683,0.0034,-0.0007,0.0074,True,0.7676,0.7678
+HistGradientBoosting,A,hogar - comunidad,6280,0.2162,0.4649,0.4687,0.0038,-0.0,0.0074,True,0.7676,0.7681
+HistGradientBoosting,B,fila - hogar,6280,0.2162,0.4553,0.4568,0.0015,-0.002,0.0049,True,0.7545,0.7544
+HistGradientBoosting,B,fila - comunidad,6280,0.2162,0.4532,0.4568,0.0035,-0.0,0.0071,True,0.7537,0.7544
+HistGradientBoosting,B,hogar - comunidad,6280,0.2162,0.4532,0.4553,0.0021,-0.0017,0.0059,True,0.7537,0.7545
+HistGradientBoosting,AgeoDMSP,fila - hogar,6280,0.2162,0.4688,0.4674,-0.0015,-0.0049,0.0017,True,0.768,0.7679
+HistGradientBoosting,AgeoDMSP,fila - comunidad,6280,0.2162,0.4641,0.4674,0.0033,-0.0004,0.0067,True,0.7673,0.7679
+HistGradientBoosting,AgeoDMSP,hogar - comunidad,6280,0.2162,0.4641,0.4688,0.0047,0.001,0.008,False,0.7673,0.768
+HistGradientBoosting,BgeoDMSP,fila - hogar,6280,0.2162,0.4567,0.4572,0.0004,-0.0029,0.0041,True,0.7547,0.7543
+HistGradientBoosting,BgeoDMSP,fila - comunidad,6280,0.2162,0.4541,0.4572,0.0031,-0.0007,0.0069,True,0.754,0.7543
+HistGradientBoosting,BgeoDMSP,hogar - comunidad,6280,0.2162,0.4541,0.4567,0.0027,-0.0012,0.0063,True,0.754,0.7547
+HistGradientBoosting,A,luz (fila),6280,0.2162,0.4683,0.4674,-0.0009,-0.0028,0.0009,True,0.7678,0.7679
+HistGradientBoosting,A,luz (hogar),6280,0.2162,0.4687,0.4688,0.0001,-0.0018,0.0021,True,0.7681,0.768
+HistGradientBoosting,A,luz (comunidad),6280,0.2162,0.4649,0.4641,-0.0008,-0.0029,0.0012,True,0.7676,0.7673
+HistGradientBoosting,B,luz (fila),6280,0.2162,0.4568,0.4572,0.0004,-0.0024,0.0031,True,0.7544,0.7543
+HistGradientBoosting,B,luz (hogar),6280,0.2162,0.4553,0.4567,0.0015,-0.0013,0.0042,True,0.7545,0.7547
+HistGradientBoosting,B,luz (comunidad),6280,0.2162,0.4532,0.4541,0.0009,-0.0019,0.0038,True,0.7537,0.754
+LightGBM,A,fila - hogar,6280,0.2162,0.472,0.4723,0.0003,-0.0051,0.0058,True,0.7719,0.7725
+LightGBM,A,fila - comunidad,6280,0.2162,0.4687,0.4723,0.0036,-0.002,0.0088,True,0.7707,0.7725
+LightGBM,A,hogar - comunidad,6280,0.2162,0.4687,0.472,0.0033,-0.002,0.0088,True,0.7707,0.7719
+LightGBM,B,fila - hogar,6280,0.2162,0.4456,0.4477,0.0021,-0.0022,0.0059,True,0.748,0.748
+LightGBM,B,fila - comunidad,6280,0.2162,0.4445,0.4477,0.0032,-0.0007,0.0075,True,0.7478,0.748
+LightGBM,B,hogar - comunidad,6280,0.2162,0.4445,0.4456,0.0011,-0.0031,0.0059,True,0.7478,0.748
+LightGBM,AgeoDMSP,fila - hogar,6280,0.2162,0.4793,0.4803,0.001,-0.0043,0.0064,True,0.7735,0.7753
+LightGBM,AgeoDMSP,fila - comunidad,6280,0.2162,0.4703,0.4803,0.01,0.0041,0.0162,False,0.7703,0.7753
+LightGBM,AgeoDMSP,hogar - comunidad,6280,0.2162,0.4703,0.4793,0.009,0.0031,0.0153,False,0.7703,0.7735
+LightGBM,BgeoDMSP,fila - hogar,6280,0.2162,0.4653,0.4672,0.0019,-0.0024,0.0061,True,0.7596,0.7607
+LightGBM,BgeoDMSP,fila - comunidad,6280,0.2162,0.4629,0.4672,0.0043,-0.0005,0.0089,True,0.7585,0.7607
+LightGBM,BgeoDMSP,hogar - comunidad,6280,0.2162,0.4629,0.4653,0.0024,-0.0022,0.0072,True,0.7585,0.7596
+LightGBM,A,luz (fila),6280,0.2162,0.4723,0.4803,0.008,0.0018,0.0141,False,0.7725,0.7753
+LightGBM,A,luz (hogar),6280,0.2162,0.472,0.4793,0.0073,0.0014,0.0133,False,0.7719,0.7735
+LightGBM,A,luz (comunidad),6280,0.2162,0.4687,0.4703,0.0016,-0.005,0.0087,True,0.7707,0.7703
+LightGBM,B,luz (fila),6280,0.2162,0.4477,0.4672,0.0196,0.0118,0.027,False,0.748,0.7607
+LightGBM,B,luz (hogar),6280,0.2162,0.4456,0.4653,0.0197,0.0113,0.0273,False,0.748,0.7596
+LightGBM,B,luz (comunidad),6280,0.2162,0.4445,0.4629,0.0185,0.0106,0.0259,False,0.7478,0.7585
+Logistica,A,fila - hogar,6280,0.2162,0.4668,0.4671,0.0003,-0.0018,0.0023,True,0.7625,0.7626
+Logistica,A,fila - comunidad,6280,0.2162,0.4661,0.4671,0.001,-0.0014,0.0034,True,0.7622,0.7626
+Logistica,A,hogar - comunidad,6280,0.2162,0.4661,0.4668,0.0007,-0.0018,0.0032,True,0.7622,0.7625
+Logistica,B,fila - hogar,6280,0.2162,0.4626,0.4631,0.0005,-0.0015,0.0023,True,0.7553,0.7554
+Logistica,B,fila - comunidad,6280,0.2162,0.4611,0.4631,0.0021,-0.0003,0.0045,True,0.7546,0.7554
+Logistica,B,hogar - comunidad,6280,0.2162,0.4611,0.4626,0.0016,-0.0008,0.004,True,0.7546,0.7553
+Logistica,AgeoDMSP,fila - hogar,6280,0.2162,0.4657,0.4663,0.0005,-0.0014,0.0025,True,0.7623,0.7624
+Logistica,AgeoDMSP,fila - comunidad,6280,0.2162,0.4649,0.4663,0.0014,-0.0011,0.004,True,0.7616,0.7624
+Logistica,AgeoDMSP,hogar - comunidad,6280,0.2162,0.4649,0.4657,0.0009,-0.0016,0.0035,True,0.7616,0.7623
+Logistica,BgeoDMSP,fila - hogar,6280,0.2162,0.4614,0.4621,0.0007,-0.0013,0.0027,True,0.755,0.7551
+Logistica,BgeoDMSP,fila - comunidad,6280,0.2162,0.4599,0.4621,0.0022,-0.0003,0.0046,True,0.7539,0.7551
+Logistica,BgeoDMSP,hogar - comunidad,6280,0.2162,0.4599,0.4614,0.0014,-0.0011,0.0038,True,0.7539,0.755
+Logistica,A,luz (fila),6280,0.2162,0.4671,0.4663,-0.0008,-0.0026,0.0009,True,0.7626,0.7624
+Logistica,A,luz (hogar),6280,0.2162,0.4668,0.4657,-0.001,-0.0028,0.0007,True,0.7625,0.7623
+Logistica,A,luz (comunidad),6280,0.2162,0.4661,0.4649,-0.0012,-0.0031,0.0004,True,0.7622,0.7616
+Logistica,B,luz (fila),6280,0.2162,0.4631,0.4621,-0.0011,-0.0028,0.0007,True,0.7554,0.7551
+Logistica,B,luz (hogar),6280,0.2162,0.4626,0.4614,-0.0013,-0.003,0.0003,True,0.7553,0.755
+Logistica,B,luz (comunidad),6280,0.2162,0.4611,0.4599,-0.0011,-0.0029,0.0006,True,0.7546,0.7539
+Random Forest,A,fila - hogar,6280,0.2162,0.4683,0.4683,-0.0,-0.0023,0.0022,True,0.7687,0.7697
+Random Forest,A,fila - comunidad,6280,0.2162,0.4672,0.4683,0.0011,-0.0019,0.0037,True,0.7693,0.7697
+Random Forest,A,hogar - comunidad,6280,0.2162,0.4672,0.4683,0.0011,-0.0015,0.0039,True,0.7693,0.7687
+Random Forest,B,fila - hogar,6280,0.2162,0.4567,0.457,0.0003,-0.0021,0.0026,True,0.7552,0.7562
+Random Forest,B,fila - comunidad,6280,0.2162,0.454,0.457,0.003,0.0003,0.006,False,0.7545,0.7562
+Random Forest,B,hogar - comunidad,6280,0.2162,0.454,0.4567,0.0028,-0.0001,0.0057,True,0.7545,0.7552
+Random Forest,AgeoDMSP,fila - hogar,6280,0.2162,0.468,0.4674,-0.0006,-0.0031,0.002,True,0.7692,0.7695
+Random Forest,AgeoDMSP,fila - comunidad,6280,0.2162,0.4652,0.4674,0.0023,-0.0009,0.0055,True,0.7688,0.7695
+Random Forest,AgeoDMSP,hogar - comunidad,6280,0.2162,0.4652,0.468,0.0028,-0.0007,0.0064,True,0.7688,0.7692
+Random Forest,BgeoDMSP,fila - hogar,6280,0.2162,0.4561,0.4552,-0.0009,-0.0037,0.002,True,0.7542,0.7549
+Random Forest,BgeoDMSP,fila - comunidad,6280,0.2162,0.4514,0.4552,0.0038,-0.0002,0.0078,True,0.7531,0.7549
+Random Forest,BgeoDMSP,hogar - comunidad,6280,0.2162,0.4514,0.4561,0.0047,0.0007,0.0088,False,0.7531,0.7542
+Random Forest,A,luz (fila),6280,0.2162,0.4683,0.4674,-0.0008,-0.0063,0.0052,True,0.7697,0.7695
+Random Forest,A,luz (hogar),6280,0.2162,0.4683,0.468,-0.0003,-0.0058,0.0056,True,0.7687,0.7692
+Random Forest,A,luz (comunidad),6280,0.2162,0.4672,0.4652,-0.002,-0.0078,0.0041,True,0.7693,0.7688
+Random Forest,B,luz (fila),6280,0.2162,0.457,0.4552,-0.0018,-0.0063,0.0031,True,0.7562,0.7549
+Random Forest,B,luz (hogar),6280,0.2162,0.4567,0.4561,-0.0006,-0.0053,0.0043,True,0.7552,0.7542
+Random Forest,B,luz (comunidad),6280,0.2162,0.454,0.4514,-0.0025,-0.007,0.0022,True,0.7545,0.7531
+XGBoost,A,fila - hogar,6280,0.2162,0.4779,0.4798,0.0018,-0.0013,0.0049,True,0.7733,0.7742
+XGBoost,A,fila - comunidad,6280,0.2162,0.4759,0.4798,0.0039,0.0006,0.0071,False,0.7733,0.7742
+XGBoost,A,hogar - comunidad,6280,0.2162,0.4759,0.4779,0.0021,-0.0011,0.0051,True,0.7733,0.7733
+XGBoost,B,fila - hogar,6280,0.2162,0.4639,0.465,0.001,-0.0018,0.0042,True,0.7597,0.7604
+XGBoost,B,fila - comunidad,6280,0.2162,0.4612,0.465,0.0038,0.0005,0.0074,False,0.7592,0.7604
+XGBoost,B,hogar - comunidad,6280,0.2162,0.4612,0.4639,0.0027,-0.0004,0.0062,True,0.7592,0.7597
+XGBoost,AgeoDMSP,fila - hogar,6280,0.2162,0.4791,0.479,-0.0001,-0.0031,0.0029,True,0.773,0.774
+XGBoost,AgeoDMSP,fila - comunidad,6280,0.2162,0.4759,0.479,0.0031,-0.0007,0.0068,True,0.7729,0.774
+XGBoost,AgeoDMSP,hogar - comunidad,6280,0.2162,0.4759,0.4791,0.0032,-0.0007,0.007,True,0.7729,0.773
+XGBoost,BgeoDMSP,fila - hogar,6280,0.2162,0.4665,0.4676,0.0011,-0.0017,0.0043,True,0.7596,0.7603
+XGBoost,BgeoDMSP,fila - comunidad,6280,0.2162,0.4639,0.4676,0.0037,0.0002,0.0072,False,0.7585,0.7603
+XGBoost,BgeoDMSP,hogar - comunidad,6280,0.2162,0.4639,0.4665,0.0025,-0.001,0.0061,True,0.7585,0.7596
+XGBoost,A,luz (fila),6280,0.2162,0.4798,0.479,-0.0008,-0.0038,0.0023,True,0.7742,0.774
+XGBoost,A,luz (hogar),6280,0.2162,0.4779,0.4791,0.0012,-0.002,0.0043,True,0.7733,0.773
+XGBoost,A,luz (comunidad),6280,0.2162,0.4759,0.4759,0.0,-0.0038,0.0034,True,0.7733,0.7729
+XGBoost,B,luz (fila),6280,0.2162,0.465,0.4676,0.0026,-0.001,0.0064,True,0.7604,0.7603
+XGBoost,B,luz (hogar),6280,0.2162,0.4639,0.4665,0.0025,-0.0009,0.0059,True,0.7597,0.7596
+XGBoost,B,luz (comunidad),6280,0.2162,0.4612,0.4639,0.0027,-0.0009,0.0063,True,0.7592,0.7585

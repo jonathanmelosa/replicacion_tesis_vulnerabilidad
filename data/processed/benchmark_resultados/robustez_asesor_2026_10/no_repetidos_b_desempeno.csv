@@ -1,0 +1,61 @@
+algoritmo,especificacion,forma,ap,auc,ap_media_semillas,ap_sd_semillas
+HistGradientBoosting,A,fila,0.4683,0.7678,0.4655,0.0022
+HistGradientBoosting,A,hogar,0.4687,0.7681,0.4655,0.0025
+HistGradientBoosting,A,comunidad,0.4649,0.7676,0.4621,0.0015
+HistGradientBoosting,B,fila,0.4568,0.7544,0.4538,0.0023
+HistGradientBoosting,B,hogar,0.4553,0.7545,0.4525,0.0023
+HistGradientBoosting,B,comunidad,0.4532,0.7537,0.4503,0.0043
+HistGradientBoosting,AgeoDMSP,fila,0.4674,0.7679,0.4645,0.0025
+HistGradientBoosting,AgeoDMSP,hogar,0.4688,0.768,0.4649,0.0026
+HistGradientBoosting,AgeoDMSP,comunidad,0.4641,0.7673,0.4609,0.002
+HistGradientBoosting,BgeoDMSP,fila,0.4572,0.7543,0.4539,0.0024
+HistGradientBoosting,BgeoDMSP,hogar,0.4567,0.7547,0.4536,0.0026
+HistGradientBoosting,BgeoDMSP,comunidad,0.4541,0.754,0.4511,0.0038
+LightGBM,A,fila,0.4723,0.7725,0.466,0.0028
+LightGBM,A,hogar,0.472,0.7719,0.4654,0.0038
+LightGBM,A,comunidad,0.4687,0.7707,0.4629,0.0072
+LightGBM,B,fila,0.4477,0.748,0.4439,0.0033
+LightGBM,B,hogar,0.4456,0.748,0.4427,0.0013
+LightGBM,B,comunidad,0.4445,0.7478,0.4403,0.0043
+LightGBM,AgeoDMSP,fila,0.4803,0.7753,0.4731,0.0006
+LightGBM,AgeoDMSP,hogar,0.4793,0.7735,0.4729,0.0025
+LightGBM,AgeoDMSP,comunidad,0.4703,0.7703,0.4637,0.0046
+LightGBM,BgeoDMSP,fila,0.4672,0.7607,0.4633,0.0039
+LightGBM,BgeoDMSP,hogar,0.4653,0.7596,0.4608,0.0023
+LightGBM,BgeoDMSP,comunidad,0.4629,0.7585,0.4588,0.0048
+Logistica,A,fila,0.4671,0.7626,0.4656,0.0013
+Logistica,A,hogar,0.4668,0.7625,0.4656,0.0028
+Logistica,A,comunidad,0.4661,0.7622,0.4646,0.0012
+Logistica,B,fila,0.4631,0.7554,0.4616,0.0013
+Logistica,B,hogar,0.4626,0.7553,0.4612,0.0027
+Logistica,B,comunidad,0.4611,0.7546,0.4597,0.0013
+Logistica,AgeoDMSP,fila,0.4663,0.7624,0.4647,0.0017
+Logistica,AgeoDMSP,hogar,0.4657,0.7623,0.4645,0.0025
+Logistica,AgeoDMSP,comunidad,0.4649,0.7616,0.4634,0.0014
+Logistica,BgeoDMSP,fila,0.4621,0.7551,0.4606,0.0017
+Logistica,BgeoDMSP,hogar,0.4614,0.755,0.4599,0.0023
+Logistica,BgeoDMSP,comunidad,0.4599,0.7539,0.4585,0.0014
+Random Forest,A,fila,0.4683,0.7697,0.4664,0.001
+Random Forest,A,hogar,0.4683,0.7687,0.4666,0.0018
+Random Forest,A,comunidad,0.4672,0.7693,0.4656,0.0022
+Random Forest,B,fila,0.457,0.7562,0.4555,0.0023
+Random Forest,B,hogar,0.4567,0.7552,0.4554,0.0024
+Random Forest,B,comunidad,0.454,0.7545,0.4526,0.0028
+Random Forest,AgeoDMSP,fila,0.4674,0.7695,0.4658,0.0005
+Random Forest,AgeoDMSP,hogar,0.468,0.7692,0.4666,0.0015
+Random Forest,AgeoDMSP,comunidad,0.4652,0.7688,0.4634,0.0024
+Random Forest,BgeoDMSP,fila,0.4552,0.7549,0.4537,0.0015
+Random Forest,BgeoDMSP,hogar,0.4561,0.7542,0.4543,0.003
+Random Forest,BgeoDMSP,comunidad,0.4514,0.7531,0.4495,0.0036
+XGBoost,A,fila,0.4798,0.7742,0.4773,0.0029
+XGBoost,A,hogar,0.4779,0.7733,0.4756,0.0035
+XGBoost,A,comunidad,0.4759,0.7733,0.4734,0.0025
+XGBoost,B,fila,0.465,0.7604,0.4627,0.0025
+XGBoost,B,hogar,0.4639,0.7597,0.462,0.0025
+XGBoost,B,comunidad,0.4612,0.7592,0.459,0.0027
+XGBoost,AgeoDMSP,fila,0.479,0.774,0.4767,0.0023
+XGBoost,AgeoDMSP,hogar,0.4791,0.773,0.4765,0.0034
+XGBoost,AgeoDMSP,comunidad,0.4759,0.7729,0.4731,0.0027
+XGBoost,BgeoDMSP,fila,0.4676,0.7603,0.4652,0.0023
+XGBoost,BgeoDMSP,hogar,0.4665,0.7596,0.4638,0.0032
+XGBoost,BgeoDMSP,comunidad,0.4639,0.7585,0.4613,0.0023

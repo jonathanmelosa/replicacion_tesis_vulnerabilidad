@@ -1,0 +1,69 @@
+variable,criterio,grupo,n,media
+ingreso_percapita_hogar_real,zona,Urbano,15045,372521.72576330166
+ingreso_percapita_hogar_real,zona,Rural,12887,137530.3577054512
+ingreso_percapita_hogar_real,grupo_pobreza,Pobre,14574,89276.9846996685
+ingreso_percapita_hogar_real,grupo_pobreza,No pobre,13358,454845.05980281887
+gasto_percapita_hogar_real,zona,Urbano,15045,374892.9875271388
+gasto_percapita_hogar_real,zona,Rural,12887,166575.02187087885
+gasto_percapita_hogar_real,grupo_pobreza,Pobre,14574,153899.92602126717
+gasto_percapita_hogar_real,grupo_pobreza,No pobre,13358,415030.67692482943
+brecha_lp_ingreso,zona,Urbano,15045,1.799578395513643
+brecha_lp_ingreso,zona,Rural,12887,1.1135881014514033
+brecha_lp_ingreso,grupo_pobreza,Pobre,14574,0.5450002030834443
+brecha_lp_ingreso,grupo_pobreza,No pobre,13358,2.506560403066992
+riqueza_pca_hogar,zona,Urbano,15045,-0.021836172830649373
+riqueza_pca_hogar,zona,Rural,12887,-0.13073933501607085
+riqueza_pca_hogar,grupo_pobreza,Pobre,14574,-0.7716203160578636
+riqueza_pca_hogar,grupo_pobreza,No pobre,13358,0.6911387524807666
+n_bienes_durables_hogar,zona,Urbano,15045,7.280757726819542
+n_bienes_durables_hogar,zona,Rural,12887,4.325211453402654
+n_bienes_durables_hogar,grupo_pobreza,Pobre,14574,4.775970907094826
+n_bienes_durables_hogar,grupo_pobreza,No pobre,13358,7.162224883964665
+personas_por_cuarto_hogar,zona,Urbano,15045,1.40160947892254
+personas_por_cuarto_hogar,zona,Rural,12887,1.6943334899841458
+personas_por_cuarto_hogar,grupo_pobreza,Pobre,14574,1.8719261291976401
+personas_por_cuarto_hogar,grupo_pobreza,No pobre,13358,1.1708817853637437
+nivel_educ_ordinal_jefe,zona,Urbano,10206,3.202331961591221
+nivel_educ_ordinal_jefe,zona,Rural,9792,2.042483660130719
+nivel_educ_ordinal_jefe,grupo_pobreza,Pobre,11223,2.1838189432415573
+nivel_educ_ordinal_jefe,grupo_pobreza,No pobre,8775,3.2107122507122505
+tasa_ocupacion_hogar,zona,Urbano,15031,0.6774709543276868
+tasa_ocupacion_hogar,zona,Rural,8292,0.6313162898365503
+tasa_ocupacion_hogar,grupo_pobreza,Pobre,11069,0.6011279083763993
+tasa_ocupacion_hogar,grupo_pobreza,No pobre,12254,0.7151995896854719
+tasa_afiliacion_salud_hogar,zona,Urbano,15026,0.9293362947595611
+tasa_afiliacion_salud_hogar,zona,Rural,12872,0.9444617759234757
+tasa_afiliacion_salud_hogar,grupo_pobreza,Pobre,14560,0.9341507319374763
+tasa_afiliacion_salud_hogar,grupo_pobreza,No pobre,13338,0.9386777993503138
+tasa_asistencia_escolar,zona,Urbano,7456,0.950753170403452
+tasa_asistencia_escolar,zona,Rural,6737,0.9318951136933917
+tasa_asistencia_escolar,grupo_pobreza,Pobre,8614,0.9354105355019564
+tasa_asistencia_escolar,grupo_pobreza,No pobre,5579,0.9516699527991874
+razon_dependencia_demografica,zona,Urbano,14878,0.6215948597737144
+razon_dependencia_demografica,zona,Rural,12658,0.749575495605674
+razon_dependencia_demografica,grupo_pobreza,Pobre,14409,0.8409821205955567
+razon_dependencia_demografica,grupo_pobreza,No pobre,13127,0.5041901098063969
+tuvo_algun_choque_hogar,zona,Urbano,15045,0.5448321701561981
+tuvo_algun_choque_hogar,zona,Rural,12887,0.6366105377512221
+tuvo_algun_choque_hogar,grupo_pobreza,Pobre,14574,0.5988060930424043
+tuvo_algun_choque_hogar,grupo_pobreza,No pobre,13358,0.5744871986824375
+percepcion_inseguridad_comunidad,zona,Urbano,10816,2.3868343195266273
+percepcion_inseguridad_comunidad,zona,Rural,11394,1.6505178163945937
+percepcion_inseguridad_comunidad,grupo_pobreza,Pobre,12072,1.9420974155069584
+percepcion_inseguridad_comunidad,grupo_pobreza,No pobre,10138,2.0888735450779246
+dmsp_stable_lights,zona,Urbano,10050,54.01854704323008
+dmsp_stable_lights,zona,Rural,8399,8.217775167974507
+dmsp_stable_lights,grupo_pobreza,Pobre,10429,25.510146615235694
+dmsp_stable_lights,grupo_pobreza,No pobre,8020,43.12495914837746
+dmsp_stable_lights_acum_tendencia,zona,Urbano,10050,5.0975359228443295
+dmsp_stable_lights_acum_tendencia,zona,Rural,8399,1.543275485528627
+dmsp_stable_lights_acum_tendencia,grupo_pobreza,Pobre,10429,2.922223094913722
+dmsp_stable_lights_acum_tendencia,grupo_pobreza,No pobre,8020,4.204032689611628
+alos_hh_db,zona,Urbano,5262,-5.8609599030344235
+alos_hh_db,zona,Rural,4311,-9.09142045724854
+alos_hh_db,grupo_pobreza,Pobre,5787,-7.86991758291568
+alos_hh_db,grupo_pobreza,No pobre,3786,-6.468640134345634
+l5_ndvi,zona,Urbano,3098,0.30667103706607673
+l5_ndvi,zona,Rural,3171,0.5024622217043908
+l5_ndvi,grupo_pobreza,Pobre,4077,0.4403155988850026
+l5_ndvi,grupo_pobreza,No pobre,2192,0.3413357122268127

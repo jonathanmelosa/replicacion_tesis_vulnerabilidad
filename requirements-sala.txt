@@ -1,0 +1,6 @@
+# Adicionales para el código que se corre en la sala de datos o con
+# coordenadas: extracción geoespacial (Google Earth Engine) y Street View.
+earthengine-api==1.6.15
+rasterio==1.4.3
+torch==2.8.0
+torchvision==0.23.0

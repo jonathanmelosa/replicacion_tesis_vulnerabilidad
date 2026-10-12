@@ -1,0 +1,33 @@
+\begin{table}[H]
+  \centering
+  \caption{Relación entre las fotos de Google Street View y DMSP-OLS según el desfase de la foto y el modelo de imagen, 2013 (exploratorio).}
+  \label{tab:gsv_desfase_modelos}
+  \footnotesize
+  \setlength{\tabcolsep}{6pt}
+  \begin{tabular}{lcllll}
+    \toprule
+    \multicolumn{6}{l}{\textit{A. Correlación (valor absoluto) entre la foto y DMSP-OLS de 2013, según el desfase de la foto}} \\
+    \midrule
+    \textbf{Desfase} & $\boldsymbol{n}$ & \textbf{CLIP} & \textbf{VGG19} & \textbf{ResNet50} & \textbf{Places365} \\
+    \midrule
+    Mismo año & 706 & 0.52 & 0.00 & 0.51 & 0.56 \\
+    1--2 años & 574 & 0.71 & 0.05 & 0.63 & 0.70 \\
+    3--5 años & 126 & 0.80 & 0.34 & 0.69 & 0.81 \\
+    6--10 años & 1{,}499 & 0.77 & 0.03 & 0.68 & 0.76 \\
+    11 o más años & 2{,}816 & 0.65 & 0.01 & 0.61 & 0.68 \\
+    \addlinespace
+    \multicolumn{6}{l}{\textit{B. $R^2$ de Places365 menos $R^2$ de cada modelo al predecir DMSP-OLS (IC95\%)}} \\
+    \midrule
+    \textbf{Ventana} & $\boldsymbol{n}$ & \textbf{$R^2$ Places365} & \textbf{CLIP} & \textbf{VGG19} & \textbf{ResNet50} \\
+    \midrule
+    2011--2013 & 830 & 0.738 & \shortstack{+0.040\\{}[$-$0.011, +0.089]} & \shortstack{+0.103\\{}[+0.045, +0.166]} & \shortstack{+0.035\\{}[$-$0.006, +0.078]} \\
+    \addlinespace
+    2011--2015 & 1{,}280 & 0.771 & \shortstack{+0.034\\{}[+0.006, +0.059]} & \shortstack{+0.062\\{}[+0.029, +0.098]} & \shortstack{+0.026\\{}[$-$0.000, +0.052]} \\
+    \addlinespace
+    \bottomrule
+  \end{tabular}
+  \begin{minipage}{0.95\textwidth}
+    \vspace{4pt}
+    \footnotesize \textit{Nota:} Panel A: correlación de Pearson entre el primer componente de la representación de la foto (eje común a todos los desfases) y el valor medio de DMSP-OLS de 2013, para hogares con una sola foto, según cuántos años después de 2013 se tomó; se reporta el valor absoluto porque el signo del componente es arbitrario. Un solo componente no resume igual de bien todos los modelos: con la representación completa, VGG19 predice DMSP-OLS con un $R^2$ de 0.64 a 0.71 (Tabla~\ref{tab:gsv_prediccion_luz}). Los grupos de desfase tienen hogares distintos, por lo que no son una curva de degradación de una misma muestra. Panel B: mismos hogares y particiones para los cuatro modelos; IC95\% por bootstrap pareado de hogares (2{,}000 remuestreos); la diferencia es positiva con las cinco semillas de validación cruzada probadas. Places365 y ResNet50 comparten arquitectura (ResNet-50) y solo difieren en el entrenamiento: escenas frente a objetos (ImageNet). Fuente: cálculos propios.
+  \end{minipage}
+\end{table}

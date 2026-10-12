@@ -1,0 +1,11 @@
+algoritmo,especificacion_base,especificacion_geo,n_test,auc_base,auc_geo,delta_auc,ci95_low,ci95_high,p_valor,cruza_cero
+HistGradientBoosting,A,AgeoDMSP,3191,0.7632,0.7629,-0.0003,-0.0025,0.0018,0.8,True
+HistGradientBoosting,B,BgeoDMSP,3191,0.7349,0.7355,0.0006,-0.0016,0.0027,0.642,True
+LightGBM,A,AgeoDMSP,3191,0.7582,0.7524,-0.0058,-0.0121,0.0005,0.079,True
+LightGBM,B,BgeoDMSP,3191,0.7306,0.737,0.0064,-0.0007,0.0131,0.078,True
+Logistica,A,AgeoDMSP,3191,0.7469,0.7463,-0.0006,-0.0013,0.0002,0.138,True
+Logistica,B,BgeoDMSP,3191,0.7391,0.7385,-0.0006,-0.0013,0.0002,0.138,True
+Random Forest,A,AgeoDMSP,3191,0.7647,0.7623,-0.0023,-0.0062,0.0015,0.258,True
+Random Forest,B,BgeoDMSP,3191,0.7424,0.7384,-0.004,-0.0076,0.0,0.051,True
+XGBoost,A,AgeoDMSP,3191,0.7667,0.7641,-0.0026,-0.0055,0.0005,0.102,True
+XGBoost,B,BgeoDMSP,3191,0.7416,0.7397,-0.002,-0.0053,0.0018,0.266,True

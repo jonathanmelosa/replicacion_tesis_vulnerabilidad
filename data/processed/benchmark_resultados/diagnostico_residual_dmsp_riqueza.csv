@@ -1,0 +1,13 @@
+comparacion,variable,contra,r,p,n
+cruda,dmsp_stable_lights,Y,-0.21391263128177623,1.5288520262069093e-32,3015
+"cruda (referencia, muestra propia)",ingreso_percapita_hogar_real,Y,-0.21083628918023645,2.2387579720473271e-32,3089
+cruda (dmsp vs control),n_servicios_publicos_hogar,dmsp_stable_lights,0.4182564360321102,8.3142379249043e-92,2150
+cruda (control vs outcome),n_servicios_publicos_hogar,Y,-0.19635241670421394,3.973238097244909e-20,2150
+cruda (dmsp vs control),estrato_verificado_hogar,dmsp_stable_lights,0.25544773486204897,2.243330257978502e-33,2150
+cruda (control vs outcome),estrato_verificado_hogar,Y,-0.21750028710314728,1.950904204254055e-24,2150
+cruda (dmsp vs control),n_bienes_durables_hogar,dmsp_stable_lights,0.13220377996158905,7.579183391475349e-10,2150
+cruda (control vs outcome),n_bienes_durables_hogar,Y,-0.23010631078604304,3.1292583526104444e-27,2150
+cruda (dmsp vs control),personas_por_cuarto_hogar,dmsp_stable_lights,0.017442437795914707,0.4188812319024479,2150
+cruda (control vs outcome),personas_por_cuarto_hogar,Y,0.205092041919473,7.506631856198243e-22,2150
+"parcial (manual, minimos cuadrados)",dmsp_stable_lights,Y,0.010396991662525935,,2150
+parcial (sklearn.LinearRegression),dmsp_stable_lights,Y,0.010396991662525945,0.6299328729989849,2150

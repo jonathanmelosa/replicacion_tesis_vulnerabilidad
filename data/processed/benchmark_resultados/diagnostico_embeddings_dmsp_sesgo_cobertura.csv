@@ -1,0 +1,4 @@
+grupo,n,dmsp_avg_vis_media,dmsp_avg_vis_mediana,kruskal_wallis_p
+sin_foto,2188,6.959022163972936,5.685534591194967,0.0
+fuera_ventana,5407,41.992029956796,57.90640394088669,0.0
+dentro_ventana,830,42.28756796212684,50.69859514687101,0.0

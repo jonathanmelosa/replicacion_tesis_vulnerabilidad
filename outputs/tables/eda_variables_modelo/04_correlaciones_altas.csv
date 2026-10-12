@@ -1,0 +1,36 @@
+variable_1,modulo_1,variable_2,modulo_2,r,n_conjunto
+gasto_percapita_hogar,Monetario/pobreza,gasto_percapita_hogar_real,Monetario/pobreza,0.9969665228225535,27932
+brecha_lp_gasto,Monetario/pobreza,gasto_percapita_hogar_real,Monetario/pobreza,0.9936695551915506,27932
+ingreso_percapita_hogar,Monetario/pobreza,ingreso_percapita_hogar_real,Monetario/pobreza,0.9923775157378832,27932
+gasto_percapita_hogar,Monetario/pobreza,brecha_lp_gasto,Monetario/pobreza,0.9911386965108591,27932
+brecha_lp_ingreso,Monetario/pobreza,ingreso_percapita_hogar_real,Monetario/pobreza,0.9660109662631119,27932
+ingreso_percapita_hogar,Monetario/pobreza,brecha_lp_ingreso,Monetario/pobreza,0.9614703963950914,27932
+estrato_hogar,Hogar/vivienda/activos,estrato_verificado_hogar,Hogar/vivienda/activos,0.9527345472240295,14181
+deuda_formal_hogar,Hogar/vivienda/activos,deuda_informal_hogar,Hogar/vivienda/activos,-0.9321715219788328,13721
+afiliado_pension_jefe,Personas (9 bloques),tasa_afiliacion_pension_hogar,Personas (9 bloques),0.9227857694016419,11581
+afiliado_salud_laboral_jefe,Personas (9 bloques),tasa_afiliacion_salud_laboral_hogar,Personas (9 bloques),0.920120369241997,11581
+tasa_afiliacion_pension_hogar,Personas (9 bloques),tasa_afiliacion_salud_laboral_hogar,Personas (9 bloques),0.9075285994580975,12670
+afiliado_pension_jefe,Personas (9 bloques),afiliado_salud_laboral_jefe,Personas (9 bloques),0.9028013968791337,11581
+cotiza_pension_jefe,Personas (9 bloques),tasa_cotizacion_pension_hogar,Personas (9 bloques),0.8884097697489173,27269
+jornalero_jefe,Personas (9 bloques),pct_adultos_fue_jornalero,Personas (9 bloques),0.8875507305345357,12408
+participa_organizacion_jefe,Personas (9 bloques),pct_hogar_participa_organizacion,Personas (9 bloques),0.8828915807359249,27269
+afrontamiento_erosivo_hogar,Choques,redujo_alimentos_choque_hogar,Choques,0.8812239494656741,13780
+ahorra_jefe,Personas (9 bloques),tasa_ahorro_hogar,Personas (9 bloques),0.8738818316467102,27252
+n_servicios_publicos_hogar,Hogar/vivienda/activos,dmsp_stable_lights,Geoespacial,0.8733161285677004,18449
+participa_organizacion_jefe,Personas (9 bloques),n_tipos_organizacion_jefe,Personas (9 bloques),0.8680048603188388,27269
+lp,Monetario/pobreza,li,Monetario/pobreza,0.8670098729975628,27932
+lp,Monetario/pobreza,dmsp_stable_lights,Geoespacial,0.858847884858506,18449
+n_programas_sociales_hogar,Hogar/vivienda/activos,beneficiario_algun_programa_hogar,Hogar/vivienda/activos,0.8511884349858041,27932
+afiliado_pension_jefe,Personas (9 bloques),tasa_afiliacion_salud_laboral_hogar,Personas (9 bloques),0.8372209293677498,11581
+afiliado_salud_laboral_jefe,Personas (9 bloques),tasa_afiliacion_pension_hogar,Personas (9 bloques),0.8353674358464831,11581
+personas_por_cuarto_hogar,Hogar/vivienda/activos,personas_por_dormitorio_hogar,Hogar/vivienda/activos,0.8297777534819428,27931
+talla_promedio_nino_hogar,Ninos (6-9 anios),peso_promedio_nino_hogar,Ninos (6-9 anios),0.8250217014407896,6539
+lp,Monetario/pobreza,n_servicios_publicos_hogar,Hogar/vivienda/activos,0.8117550927551155,27932
+li,Monetario/pobreza,dmsp_stable_lights,Geoespacial,0.7935531300471103,18449
+nivel_educ_ordinal_jefe,Personas (9 bloques),nivel_educ_max_hogar,Personas (9 bloques),0.7884070179684564,19998
+n_tipos_organizacion_jefe,Personas (9 bloques),pct_hogar_participa_organizacion,Personas (9 bloques),0.7746748885250346,27269
+beneficiario_familias_accion_hogar,Hogar/vivienda/activos,beneficiario_algun_programa_hogar,Hogar/vivienda/activos,0.7632044172735558,27932
+beneficiario_familias_accion_hogar,Hogar/vivienda/activos,n_programas_sociales_hogar,Hogar/vivienda/activos,0.7344543264182575,27932
+n_ninos_5,Personas (9 bloques),n_ninos_12,Personas (9 bloques),0.7286802268958696,27932
+recibio_ayuda_fam_colombia_hogar,Hogar/vivienda/activos,n_tipos_ayuda_recibida_hogar,Hogar/vivienda/activos,0.7237537289278495,27932
+tuvo_algun_choque_hogar,Choques,n_tipos_choque_hogar,Choques,0.7124179150603929,27932

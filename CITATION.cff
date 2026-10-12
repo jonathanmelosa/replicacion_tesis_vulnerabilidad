@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "Si usa este paquete, cítelo así."
+type: software
+title: "Paquete de replicación: ¿Pueden los datos geoespaciales públicos mejorar la predicción de la vulnerabilidad a la pobreza? Evidencia para hogares colombianos con base en la ELCA"
+authors:
+  - family-names: "Melo Sarta"
+    given-names: "Jonathan"
+    affiliation: "Universidad de los Andes"
+license: MIT
+version: "1.0.0"
+date-released: "2026-10-12"

@@ -1,0 +1,25 @@
+\begin{table}[H]
+  \centering
+  \caption{Desempeño del modelo multiclase (cuatro grupos) en el conjunto de prueba, pobreza monetaria, 2013$\to$2016.}
+  \label{tab:multiclase_metricas}
+  \footnotesize
+  \setlength{\tabcolsep}{4pt}
+  \resizebox{\textwidth}{!}{%
+  \begin{tabular}{lcccccccc}
+    \toprule
+    \textbf{Algoritmo} & \textbf{Balanceo} & \textbf{\shortstack{Exactitud}} & \textbf{\shortstack{Exactitud\\balanceada}} & \textbf{\shortstack{F1\\macro}} & \textbf{\shortstack{AUC-ROC\\macro}} & \textbf{\shortstack{AUC entra\\frente al resto}} & \textbf{\shortstack{Recall\\entra}} & \textbf{\shortstack{Prec.-top10\\entra}} \\
+    \midrule
+    XGBoost & ninguno & 0.582 & 0.426 & 0.384 & 0.732 & 0.596 & 0.002 & 0.111 \\
+    LightGBM & ninguno & 0.573 & 0.422 & 0.385 & 0.730 & 0.593 & 0.002 & 0.116 \\
+    HistGradientBoosting & ninguno & 0.577 & 0.424 & 0.384 & 0.731 & 0.599 & 0.002 & 0.114 \\
+    Random Forest & ninguno & 0.574 & 0.412 & 0.344 & 0.727 & 0.601 & 0.000 & 0.119 \\
+    Red neuronal (MLP) & ninguno & 0.557 & 0.412 & 0.376 & 0.713 & 0.591 & 0.008 & 0.125 \\
+    Logística regularizada & ninguno & 0.545 & 0.398 & 0.348 & 0.703 & 0.576 & 0.005 & 0.127 \\
+    \bottomrule
+  \end{tabular}%
+  }
+  \begin{minipage}{0.95\textwidth}
+    \vspace{4pt}
+    \footnotesize \textit{Nota:} Modelo B (sin ingreso ni gasto), entrenado en 2010$\to$2013 y evaluado en 2013$\to$2016 ($n=6{,}911$ hogares de los cuatro grupos), promedio de 5 semillas. El modelo asigna a cada hogar el grupo más probable, sin umbral ajustable, de modo que casi nunca asigna ``entra'', el grupo más pequeño (\emph{recall} cercano a cero); por eso se usa como diagnóstico y no como modelo principal. Prec.-top10 entra: fracción de hogares que efectivamente entran en pobreza entre el 10\% con mayor probabilidad de ``entra''. Hiperparámetros en la Tabla~\ref{tab:hiperparametros}. Fuente: cálculos propios.
+  \end{minipage}
+\end{table}

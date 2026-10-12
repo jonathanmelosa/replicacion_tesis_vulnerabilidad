@@ -1,0 +1,7 @@
+ventana,n,comparado_con,r2_places365,r2_comparado,dif_places365_menos_comparado,ic95_inf,ic95_sup,dif_min_semillas,dif_max_semillas
+original 2011-2013,830,embedding_clip,0.7378,0.6981,0.0397,-0.011,0.089,0.0276,0.0419
+original 2011-2013,830,embedding_vgg19,0.7378,0.6351,0.1026,0.0449,0.1655,0.0689,0.1026
+original 2011-2013,830,embedding_resnet50,0.7378,0.7024,0.0354,-0.0057,0.0784,0.0143,0.0502
+ampliada 2011-2015,1280,embedding_clip,0.7707,0.7371,0.0336,0.0058,0.0594,0.0267,0.0575
+ampliada 2011-2015,1280,embedding_vgg19,0.7707,0.7086,0.0621,0.0294,0.098,0.0621,0.1038
+ampliada 2011-2015,1280,embedding_resnet50,0.7707,0.7452,0.0256,-0.0004,0.0521,0.0223,0.0349

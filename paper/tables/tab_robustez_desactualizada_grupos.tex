@@ -1,0 +1,55 @@
+\begin{table}[H]
+  \centering
+  \caption{Riesgo predicho de los hogares que salieron de la pobreza frente al resto, y
+  diferencia de AUC-PR dentro de cada grupo, encuesta de 2013 y de 2010, pobreza
+  monetaria e IPM, 2013$\to$2016.}
+  \label{tab:robustez_desactualizada_grupos}
+  \footnotesize
+  \setlength{\tabcolsep}{4pt}
+  \begin{tabular}{l cc cc}
+    \toprule
+    & \multicolumn{2}{c}{\textbf{Razón de riesgo predicho}} & \multicolumn{2}{c}{\textbf{2013 menos 2010, dentro de grupo}} \\
+    \cmidrule(lr){2-3}\cmidrule(lr){4-5}
+    \textbf{Modelo} & \textbf{Encuesta 2013} & \textbf{Encuesta 2010} & \textbf{Salieron} & \textbf{No pobres al inicio} \\
+    \midrule
+    \multicolumn{5}{l}{\textit{Pobreza monetaria, sin ingreso ni gasto (Modelo B)}} \\
+    \quad \emph{Elastic net} (principal) & 1.48 & 1.57 & 0.052\textsuperscript{*} & 0.037 \\
+    \quad Random Forest & 1.52 & 1.72 & 0.040\textsuperscript{*} & 0.006 \\
+    \quad XGBoost & 1.71 & 2.08 & 0.016 & 0.018 \\
+    \quad LightGBM & 1.55 & 1.71 & 0.008 & 0.005 \\
+    \quad HistGradientBoosting & 1.70 & 1.85 & 0.019 & 0.021 \\
+    \addlinespace
+    \multicolumn{5}{l}{\textit{Pobreza monetaria, con ingreso y gasto (Modelo A)}} \\
+    \quad \emph{Elastic net} & 1.51 & 1.65 & 0.047\textsuperscript{*} & 0.044\textsuperscript{*} \\
+    \quad Random Forest & 1.83 & 2.51 & 0.011 & 0.030 \\
+    \quad XGBoost & 1.84 & 2.52 & 0.008 & 0.048 \\
+    \quad LightGBM & 2.12 & 2.98 & 0.009 & 0.046 \\
+    \quad HistGradientBoosting & 1.55 & 1.73 & 0.008 & 0.042 \\
+    \addlinespace
+    \multicolumn{5}{l}{\textit{IPM, sin ingreso ni gasto (Modelo B)}} \\
+    \quad \emph{Elastic net} & 1.85 & 2.63 & $-$0.028 & $-$0.007 \\
+    \quad Random Forest & 1.61 & 2.09 & $-$0.017 & $-$0.005 \\
+    \quad XGBoost & 1.64 & 3.05 & $-$0.026 & $-$0.001 \\
+    \quad LightGBM & 1.92 & 3.32 & $-$0.015 & 0.010 \\
+    \quad HistGradientBoosting & 2.08 & 3.15 & 0.008 & 0.009 \\
+    \addlinespace
+    \multicolumn{5}{l}{\textit{IPM, con ingreso y gasto (Modelo A)}} \\
+    \quad \emph{Elastic net} & 1.86 & 2.63 & $-$0.028 & $-$0.007 \\
+    \quad Random Forest & 1.61 & 1.99 & 0.035 & $-$0.013 \\
+    \quad XGBoost & 1.63 & 3.02 & $-$0.008 & $-$0.008 \\
+    \quad LightGBM & 1.90 & 2.69 & 0.024 & 0.012 \\
+    \quad HistGradientBoosting & 2.09 & 3.08 & 0.017 & 0.005 \\
+    \bottomrule
+  \end{tabular}
+  \begin{minipage}{0.95\textwidth}
+    \vspace{4pt}
+    \footnotesize \textit{Nota:} Razón de riesgo predicho: riesgo predicho promedio de
+    los hogares que salieron de la pobreza en la ventana anterior dividido por el de los
+    que no eran pobres al inicio de ella. Razón observada de las tasas de entrada en
+    pobreza: 2.85 (monetaria) y 2.95 (IPM). 2013 menos 2010, dentro de
+    grupo: diferencia de AUC-PR entre las dos encuestas, calculada por separado en cada
+    grupo. \textsuperscript{*}: el IC95\% por \emph{bootstrap} pareado de 2{,}000 remuestras
+    por comunidad excluye el cero.
+    Fuente: cálculos propios.
+  \end{minipage}
+\end{table}

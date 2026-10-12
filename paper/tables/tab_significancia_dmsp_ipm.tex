@@ -1,0 +1,48 @@
+\begin{table}[H]
+  \centering
+  \caption{Significancia del cambio en el AUC-ROC al agregar DMSP-OLS,
+  pobreza monetaria e IPM, 2013$\to$2016.}
+  \label{tab:significancia_dmsp_ipm}
+  \footnotesize
+  \setlength{\tabcolsep}{6pt}
+  \begin{tabular}{llcccc}
+    \toprule
+    \textbf{Algoritmo} & \textbf{Espec.} & $\boldsymbol{\Delta}$\textbf{AUC} & \textbf{IC95\%} & $\boldsymbol{p}$ & $\boldsymbol{p}$ \textbf{por comunidad} \\
+    \midrule
+    \multicolumn{6}{l}{\textit{Pobreza monetaria}} \\
+    XGBoost                  & A & $-$0.003 & [$-$0.005, +0.001] & 0.102 & 0.085 \\
+    Random Forest            & A & $-$0.002 & [$-$0.006, +0.002] & 0.258 & -- \\
+    LightGBM                 & A & $-$0.006 & [$-$0.012, +0.001] & 0.079 & -- \\
+    HistGradientBoosting     & A & $-$0.000 & [$-$0.003, +0.002] & 0.800 & 0.802 \\
+    Logística regularizada   & A & $-$0.001 & [$-$0.001, +0.000] & 0.138 & 0.163 \\
+    \addlinespace
+    XGBoost                  & B & $-$0.002 & [$-$0.005, +0.002] & 0.266 & 0.308 \\
+    Random Forest            & B & $-$0.004 & [$-$0.008, +0.000] & 0.051 & -- \\
+    LightGBM                 & B & +0.006 & [$-$0.001, +0.013] & 0.078 & -- \\
+    HistGradientBoosting     & B & +0.001 & [$-$0.002, +0.003] & 0.642 & 0.622 \\
+    Logística regularizada   & B & $-$0.001 & [$-$0.001, +0.000] & 0.138 & 0.154 \\
+    \addlinespace
+    \multicolumn{6}{l}{\textit{Pobreza multidimensional (IPM)}} \\
+    XGBoost                  & A & \textbf{+0.013} & [+0.004, +0.022] & 0.006 & 0.004 \\
+    Random Forest            & A & +0.001 & [$-$0.006, +0.008] & 0.754 & -- \\
+    LightGBM                 & A & +0.004 & [$-$0.001, +0.008] & 0.091 & -- \\
+    HistGradientBoosting     & A & $-$0.002 & [$-$0.007, +0.004] & 0.541 & 0.548 \\
+    Logística regularizada   & A & $-$0.000 & [$-$0.001, +0.001] & 0.934 & 0.954 \\
+    \addlinespace
+    XGBoost                  & B & \textbf{+0.020} & [+0.010, +0.030] & 0.001 & 0.000 \\
+    Random Forest            & B & $-$0.004 & [$-$0.012, +0.005] & 0.429 & -- \\
+    LightGBM                 & B & \textbf{+0.017} & [+0.008, +0.026] & 0.000 & -- \\
+    HistGradientBoosting     & B & +0.002 & [$-$0.004, +0.007] & 0.595 & 0.569 \\
+    Logística regularizada   & B & $-$0.000 & [$-$0.001, +0.001] & 0.978 & 0.926 \\
+    \bottomrule
+  \end{tabular}
+  \begin{minipage}{0.95\textwidth}
+    \vspace{4pt}
+    \footnotesize \textit{Nota:} $\Delta$AUC, IC95\% y $p$: \emph{bootstrap} pareado sobre el
+    conjunto de prueba (una semilla). $p$ por comunidad:
+    remuestreo agrupado por comunidad (1{,}696 comunidades),
+    porque hogares de una misma comunidad comparten en buena medida el
+    mismo píxel de DMSP-OLS (resolución de $\sim$1\,km); ``--'':
+    corrección no estimada. Fuente: cálculos propios.
+  \end{minipage}
+\end{table}

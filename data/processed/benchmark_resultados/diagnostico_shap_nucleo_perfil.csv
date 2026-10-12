@@ -1,0 +1,23 @@
+variable,categoria,n_combinaciones,shap_promedio_normalizado
+estrato_verificado_hogar,Activos del hogar,10,0.02625
+n_servicios_publicos_hogar,Activos del hogar,10,0.03539
+n_bienes_durables_hogar,Activos del hogar,10,0.05671
+tiene_internet_hogar,Activos del hogar,9,0.03352
+riqueza_pca_hogar,Activos del hogar,8,0.08412
+n_activos_financieros_hogar,Activos del hogar,6,0.01561
+tuvo_choque_economico_hogar,Choques y afrontamiento,6,0.01878
+pct_ninos_madre_viva,Composición del hogar,8,0.02342
+razon_dependencia_demografica,Composición del hogar,8,0.01455
+edad_jefe,Composición del hogar,7,0.01218
+pct_ninos_padre_vivo,Composición del hogar,7,0.01352
+estado_civil_jefe,Composición del hogar,6,0.01047
+n_desplazados_comunidad,Comunidad,5,0.00775
+tvip_puntaje_directo_hogar,Desarrollo infantil (6--9 años),6,0.01274
+nivel_educ_max_hogar,"Educación, empleo y seguridad social",9,0.07815
+tasa_cotizacion_pension_hogar,"Educación, empleo y seguridad social",7,0.01924
+grado_educ_jefe,"Educación, empleo y seguridad social",6,0.01108
+nivel_educ_ordinal_jefe,"Educación, empleo y seguridad social",5,0.01342
+tasa_control_preventivo_hogar,Salud,6,0.00882
+personas_por_cuarto_hogar,Vivienda: hacinamiento,10,0.03666
+valor_arriendo_pagado_hogar,Vivienda: hacinamiento,6,0.01062
+material_pisos_hogar,Vivienda: materiales y servicios,8,0.02239

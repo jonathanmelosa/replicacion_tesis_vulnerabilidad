@@ -1,0 +1,77 @@
+{\scriptsize
+\captionsetup{font=normalsize}
+\setlength{\LTcapwidth}{\textwidth}
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{lcccccc}
+  \caption{Núcleo de variables del análisis SHAP y su dirección, pobreza
+  monetaria e IPM, 2010$\to$2013 y 2013$\to$2016.}
+  \label{tab:shap_signo_nucleo} \\
+  \toprule
+  \textbf{Variable} & \textbf{Comb.} & \shortstack{\textbf{Monetaria}\\\textbf{2010$\to$13}} & \shortstack{\textbf{Monetaria}\\\textbf{2013$\to$16}} & \shortstack{\textbf{IPM}\\\textbf{2010$\to$13}} & \shortstack{\textbf{IPM}\\\textbf{2013$\to$16}} & \textbf{Dirección} \\
+  \midrule
+  \endfirsthead
+  \multicolumn{7}{l}{\textit{Tabla~\thetable\ (continuación)}} \\
+  \toprule
+  \textbf{Variable} & \textbf{Comb.} & \shortstack{\textbf{Monetaria}\\\textbf{2010$\to$13}} & \shortstack{\textbf{Monetaria}\\\textbf{2013$\to$16}} & \shortstack{\textbf{IPM}\\\textbf{2010$\to$13}} & \shortstack{\textbf{IPM}\\\textbf{2013$\to$16}} & \textbf{Dirección} \\
+  \midrule
+  \endhead
+  \midrule
+  \multicolumn{7}{r}{\textit{Continúa en la página siguiente}} \\
+  \endfoot
+  \bottomrule
+  \endlastfoot
+    \textbf{Activos del hogar} & & & & & & \\*
+    \quad Estrato (verificado) & 10 & $-$\,10/10 & $-$\,10/10 & $-$\,5/5 & $-$\,10/10 & Estable \\
+    \quad N.\textsuperscript{o} de servicios públicos & 10 & $-$\,10/10 & $-$\,3/5 & $-$\,10/10 & $-$\,9/10 & Inestable \\
+    \quad N.\textsuperscript{o} de bienes durables & 10 & $-$\,10/10 & $-$\,10/10 & $-$\,7/8 & $-$\,7/9 & Inestable \\
+    \quad Tiene internet en el hogar & 9 & $-$\,10/10 & $-$\,7/7 & $+$\,3/5 & $+$\,5/8 & Inestable \\
+    \quad Índice de riqueza (PCA) & 8 & $-$\,10/10 & $-$\,10/10 & $-$\,8/8 & $-$\,10/10 & Estable \\
+    \quad N.\textsuperscript{o} de activos financieros & 6 & $-$\,9/9 & $-$\,9/10 & $-$\,10/10 & $-$\,10/10 & Estable \\
+    \addlinespace
+    \textbf{Educación, empleo y seguridad social} & & & & & & \\*
+    \quad Máx. nivel educativo del hogar & 9 & $-$\,10/10 & $-$\,10/10 & $-$\,9/9 & $-$\,9/10 & Estable \\
+    \quad Cotización a pensión (hogar) & 7 & $-$\,8/9 & $-$\,9/9 & $-$\,7/9 & $-$\,8/8 & Inestable \\
+    \quad Último grado aprobado por el jefe & 6 & $-$\,6/6 & $-$\,5/5 & $-$\,9/9 & $-$\,9/9 & Estable \\
+    \quad Nivel educativo del jefe (ordinal) & 5 & $-$\,8/8 & $-$\,8/8 & $-$\,9/10 & $-$\,8/8 & Moderada \\
+    \addlinespace
+    \textbf{Vivienda: materiales y servicios} & & & & & & \\*
+    \quad Material de piso del hogar & 8 & cat. & cat. & cat. & cat. & -- \\
+    \addlinespace
+    \textbf{Vivienda: hacinamiento} & & & & & & \\*
+    \quad Personas por habitación & 10 & $+$\,10/10 & $+$\,9/9 & $+$\,10/10 & $+$\,10/10 & Estable \\
+    \quad Valor del arriendo pagado & 6 & $-$\,9/10 & $-$\,7/8 & $-$\,10/10 & $-$\,8/8 & Moderada \\
+    \addlinespace
+    \textbf{Composición del hogar} & & & & & & \\*
+    \quad \char`\%{} de niños con madre viva & 8 & $+$\,9/9 & $+$\,6/6 & $+$\,8/8 & $-$\,4/6 & Inestable \\
+    \quad Razón de dependencia demográfica & 8 & $+$\,8/9 & $+$\,8/9 & $+$\,8/10 & $+$\,8/10 & Moderada \\
+    \quad Edad del jefe de hogar & 7 & $-$\,8/8 & $-$\,6/7 & $+$\,9/9 & $+$\,7/7 & Inestable \\
+    \quad \char`\%{} de niños con padre vivo & 7 & $-$\,4/6 & $+$\,8/9 & $-$\,5/5 & $-$\,10/10 & Inestable \\
+    \quad Estado civil del jefe & 6 & cat. & cat. & cat. & cat. & -- \\
+    \addlinespace
+    \textbf{Desarrollo infantil (6--9 años)} & & & & & & \\*
+    \quad Puntaje de vocabulario infantil (test TVIP) & 6 & $-$\,4/7 & $-$\,4/6 & $-$\,10/10 & $-$\,8/9 & Inestable \\
+    \addlinespace
+    \textbf{Salud} & & & & & & \\*
+    \quad Tasa de controles médicos preventivos (hogar) & 6 & $-$\,9/9 & $-$\,8/8 & $-$\,10/10 & $-$\,8/9 & Moderada \\
+    \addlinespace
+    \textbf{Choques y afrontamiento} & & & & & & \\*
+    \quad Tuvo un choque económico (hogar) & 6 & $+$\,8/9 & $+$\,4/7 & $+$\,8/8 & $+$\,4/6 & Inestable \\
+    \addlinespace
+    \textbf{Comunidad} & & & & & & \\*
+    \quad N.\textsuperscript{o} de desplazados en la comunidad & 5 & $-$\,6/9 & $-$\,7/8 & $+$\,2/3 & $+$\,4/6 & Inestable \\
+\end{longtable}
+\vspace{-\LTpost}
+{\footnotesize \textit{Nota:} \emph{Comb.}: combinaciones
+algoritmo/especificación (de 10) en que la variable está dentro del
+80\% de la masa SHAP acumulada
+(Sección~\ref{subsec:importancia_resultados}). Cada celda de signo
+indica el signo mayoritario y en cuántas ($n$) de las $m$
+combinaciones con dirección clara ($|\rho|\geq 0.10$) aparece: $-$
+significa que valores altos de la variable \emph{reducen} el riesgo
+de entrar en pobreza; $+$, que lo \emph{aumentan}.
+\emph{Dirección}: Estable = mismo signo en las cuatro fuentes bajo
+las 12 combinaciones de umbrales evaluadas; Moderada = en al menos 8;
+Inestable = en menos. ``cat.'': variable categórica, sin signo a nivel
+de variable.
+Fuente: cálculos propios.\par}
+}

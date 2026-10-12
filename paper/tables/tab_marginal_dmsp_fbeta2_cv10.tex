@@ -1,0 +1,56 @@
+\begin{table}[H]
+  \centering
+  \caption{AUC-ROC y precisión en el decil de mayor riesgo con y sin
+  DMSP-OLS en el conjunto de prueba, pobreza monetaria, 2013$\to$2016.}
+  \label{tab:marginal_dmsp_fbeta2_cv10}
+  \footnotesize
+  \setlength{\tabcolsep}{4pt}
+  \resizebox{\textwidth}{!}{%
+  \begin{tabular}{llccccccccc}
+    \toprule
+    \textbf{Algoritmo} & \textbf{Especificación} & \textbf{AUC-ROC} & \textbf{IC95\%} & \textbf{Prec.-top10} & \textbf{IC95\%} & \textbf{Umbral} & \textbf{\emph{Recall}} & \textbf{Precisión} & \textbf{F1} & \textbf{Brecha CV} \\
+    \midrule
+    Random Forest            & A               & 0.766 & [0.765, 0.767] & 0.486 & [0.476, 0.495] & 0.138 & 0.926 & 0.277 & 0.426 & +0.000 \\
+    Random Forest            & A + DMSP-OLS    & 0.763 & [0.762, 0.764] & 0.481 & [0.470, 0.493] & 0.264 & 0.938 & 0.271 & 0.420 & +0.002 \\
+    \addlinespace
+    XGBoost                  & A               & 0.767 & [0.766, 0.769] & 0.505 & [0.496, 0.514] & 0.112 & 0.949 & 0.264 & 0.413 & $-$0.001 \\
+    XGBoost                  & A + DMSP-OLS    & 0.765 & [0.764, 0.766] & 0.501 & [0.488, 0.515] & 0.118 & 0.937 & 0.272 & 0.421 & +0.000 \\
+    \addlinespace
+    LightGBM                 & A               & 0.758 & [0.758, 0.758] & 0.516 & [0.516, 0.516] & 0.096 & 0.903 & 0.281 & 0.428 & +0.003 \\
+    LightGBM                 & A + DMSP-OLS    & 0.752 & [0.752, 0.752] & 0.497 & [0.497, 0.497] & 0.102 & 0.902 & 0.277 & 0.424 & +0.011 \\
+    \addlinespace
+    HistGradientBoosting     & A               & 0.763 & [0.763, 0.763] & 0.512 & [0.512, 0.512] & 0.324 & 0.909 & 0.283 & 0.432 & $-$0.003 \\
+    HistGradientBoosting     & A + DMSP-OLS    & 0.763 & [0.763, 0.763] & 0.500 & [0.500, 0.500] & 0.312 & 0.912 & 0.281 & 0.429 & $-$0.002 \\
+    \addlinespace
+    Logística regularizada   & A               & 0.747 & [0.747, 0.747] & 0.506 & [0.506, 0.506] & 0.372 & 0.883 & 0.280 & 0.426 & +0.015 \\
+    Logística regularizada   & A + DMSP-OLS    & 0.746 & [0.746, 0.746] & 0.500 & [0.500, 0.500] & 0.370 & 0.883 & 0.281 & 0.426 & +0.015 \\
+    \addlinespace
+    Random Forest            & B               & 0.742 & [0.741, 0.744] & 0.508 & [0.497, 0.520] & 0.306 & 0.892 & 0.272 & 0.416 & +0.013 \\
+    Random Forest            & B + DMSP-OLS    & 0.739 & [0.737, 0.741] & 0.492 & [0.482, 0.502] & 0.266 & 0.925 & 0.255 & 0.399 & +0.015 \\
+    \addlinespace
+    XGBoost                  & B               & 0.742 & [0.742, 0.743] & 0.495 & [0.487, 0.503] & 0.126 & 0.940 & 0.250 & 0.395 & +0.014 \\
+    XGBoost                  & B + DMSP-OLS    & 0.740 & [0.740, 0.741] & 0.495 & [0.491, 0.499] & 0.128 & 0.929 & 0.254 & 0.399 & +0.016 \\
+    \addlinespace
+    LightGBM                 & B               & 0.731 & [0.731, 0.731] & 0.487 & [0.487, 0.487] & 0.148 & 0.909 & 0.259 & 0.403 & +0.024 \\
+    LightGBM                 & B + DMSP-OLS    & 0.737 & [0.737, 0.737] & 0.481 & [0.481, 0.481] & 0.126 & 0.888 & 0.271 & 0.415 & +0.019 \\
+    \addlinespace
+    HistGradientBoosting     & B               & 0.735 & [0.735, 0.735] & 0.494 & [0.494, 0.494] & 0.142 & 0.879 & 0.275 & 0.418 & +0.017 \\
+    HistGradientBoosting     & B + DMSP-OLS    & 0.736 & [0.736, 0.736] & 0.487 & [0.487, 0.487] & 0.142 & 0.880 & 0.275 & 0.419 & +0.018 \\
+    \addlinespace
+    Logística regularizada   & B               & 0.739 & [0.739, 0.739] & 0.500 & [0.500, 0.500] & 0.350 & 0.890 & 0.270 & 0.414 & +0.018 \\
+    Logística regularizada   & B + DMSP-OLS    & 0.739 & [0.739, 0.739] & 0.494 & [0.494, 0.494] & 0.350 & 0.888 & 0.273 & 0.417 & +0.018 \\
+    \bottomrule
+  \end{tabular}%
+  }
+  \begin{minipage}{0.95\textwidth}
+    \vspace{4pt}
+    \footnotesize \textit{Nota:} Entrenamiento en 2010$\to$2013. Promedio de 5 semillas; IC95\% sobre
+    las semillas. Prec.-top10: precisión en el 10\% de hogares con mayor riesgo
+    predicho. \emph{Recall}, precisión y F1 se miden al umbral ya
+    elegido para cada algoritmo y especificación por validación cruzada
+    maximizando F$_2$ (Sección~\ref{subsec:desbalance}). Brecha CV: AUC
+    de validación cruzada menos AUC en prueba; si agregar DMSP-OLS
+    sobreajustara, se ensancharía frente a la especificación sin
+    DMSP-OLS. Fuente: cálculos propios.
+  \end{minipage}
+\end{table}

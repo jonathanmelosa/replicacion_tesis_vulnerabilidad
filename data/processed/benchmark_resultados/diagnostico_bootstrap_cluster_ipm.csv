@@ -1,0 +1,7 @@
+algoritmo,especificacion_base,especificacion_geo,n_hogares,n_clusters,auc_base,auc_geo,delta_auc,ci95_low_cluster,ci95_high_cluster,p_valor_cluster,cruza_cero
+XGBoost,Aipm,AipmgeoDMSP,5571,1696,0.7243,0.7371,0.0128,0.0031,0.0227,0.004,False
+HistGradientBoosting,Aipm,AipmgeoDMSP,5571,1696,0.7396,0.7378,-0.0018,-0.0075,0.0037,0.548,True
+Logistica,Aipm,AipmgeoDMSP,5571,1696,0.73,0.73,-0.0,-0.0014,0.0011,0.954,True
+XGBoost,Bipm,BipmgeoDMSP,5571,1696,0.7285,0.7483,0.0198,0.0106,0.0299,0.0,False
+HistGradientBoosting,Bipm,BipmgeoDMSP,5571,1696,0.7385,0.7401,0.0016,-0.0041,0.0072,0.569,True
+Logistica,Bipm,BipmgeoDMSP,5571,1696,0.7296,0.7295,-0.0,-0.0013,0.0011,0.926,True

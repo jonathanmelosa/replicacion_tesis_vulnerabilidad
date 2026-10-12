@@ -1,0 +1,44 @@
+\begin{table}[H]
+  \centering
+  \caption{AUC-ROC y precisión en el decil de mayor riesgo con y sin las
+  tres fuentes geoespaciales en validación cruzada, pobreza monetaria,
+  2010$\to$2013.}
+  \label{tab:geo3_cv}
+  \footnotesize
+  \setlength{\tabcolsep}{3pt}
+  \begin{tabular}{llccccc}
+    \toprule
+    \textbf{Algoritmo} & \textbf{Especificación} & \textbf{N.º var.} & \textbf{AUC-ROC} & \textbf{IC95\%} & \textbf{$\Delta$AUC} & \textbf{Prec.-top10} \\
+    \midrule
+    XGBoost                  & A              & 169 & 0.766 & [0.764, 0.767] & -- & 0.577 \\
+    XGBoost                  & A + 3 fuentes  & 296 & 0.765 & [0.763, 0.767] & $-$0.000 & 0.574 \\
+    \addlinespace
+    HistGradientBoosting     & A              & 169 & 0.760 & [0.757, 0.762] & -- & 0.583 \\
+    HistGradientBoosting     & A + 3 fuentes  & 296 & 0.757 & [0.755, 0.759] & $-$0.003 & 0.560 \\
+    \addlinespace
+    Logística regularizada   & A              & 169 & 0.760 & [0.759, 0.761] & -- & 0.548 \\
+    Logística regularizada   & A + 3 fuentes  & 296 & 0.755 & [0.753, 0.756] & $-$0.006 & 0.547 \\
+    \addlinespace
+    XGBoost                  & B              & 165 & 0.757 & [0.755, 0.759] & -- & 0.563 \\
+    XGBoost                  & B + 3 fuentes  & 292 & 0.756 & [0.754, 0.757] & $-$0.001 & 0.581 \\
+    \addlinespace
+    HistGradientBoosting     & B              & 165 & 0.753 & [0.751, 0.755] & -- & 0.568 \\
+    HistGradientBoosting     & B + 3 fuentes  & 292 & 0.750 & [0.749, 0.752] & $-$0.003 & 0.566 \\
+    \addlinespace
+    Logística regularizada   & B              & 165 & 0.755 & [0.753, 0.756] & -- & 0.544 \\
+    Logística regularizada   & B + 3 fuentes  & 292 & 0.751 & [0.750, 0.753] & $-$0.004 & 0.557 \\
+    \bottomrule
+  \end{tabular}
+  \begin{minipage}{0.95\textwidth}
+    \vspace{4pt}
+    \footnotesize \textit{Nota:} Las tres fuentes suman 127 variables (DMSP-OLS,
+    ALOS PALSAR y Landsat 5 TM). Validación cruzada de 10 particiones dentro
+    de 2010$\to$2013; media e IC95\% sobre 5 semillas. ALOS PALSAR y Landsat 5 TM
+    no tienen dato en 2013, por lo que esta variante no admite la evaluación en
+    el conjunto de prueba 2013$\to$2016    de la Tabla~\ref{tab:marginal_dmsp_fbeta2_cv10}: las métricas se calculan sobre
+    probabilidades \emph{out-of-fold} y son comparables entre sí, no contra
+    esa tabla. Solo se estimaron modelos con los tres algoritmos mostrados.
+    N.º var.: covariables que recibe el modelo. Prec.-top10: precisión en el
+    10\% de hogares con mayor riesgo predicho. Fuente: cálculos propios.
+  \end{minipage}
+\end{table}

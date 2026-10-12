@@ -1,0 +1,178 @@
+variable,modulo,tipo,n_no_nulo,cobertura_pct
+ingreso_percapita_hogar,Monetario/pobreza,Numerica,27932,100.0
+gasto_percapita_hogar,Monetario/pobreza,Numerica,27932,100.0
+lp,Monetario/pobreza,Numerica,27932,100.0
+li,Monetario/pobreza,Numerica,27932,100.0
+pobre_ingreso,Monetario/pobreza,Booleana,27932,100.0
+pobre_extremo_ingreso,Monetario/pobreza,Booleana,27932,100.0
+pobre_gasto,Monetario/pobreza,Booleana,27932,100.0
+pobre_extremo_gasto,Monetario/pobreza,Booleana,27932,100.0
+concuerdan_ingreso_gasto,Monetario/pobreza,Booleana,27932,100.0
+brecha_lp_ingreso,Monetario/pobreza,Numerica,27932,100.0
+brecha_lp_gasto,Monetario/pobreza,Numerica,27932,100.0
+ingreso_percapita_hogar_real,Monetario/pobreza,Numerica,27932,100.0
+gasto_percapita_hogar_real,Monetario/pobreza,Numerica,27932,100.0
+n_ninos_5,Personas (9 bloques),Numerica,27932,100.0
+n_ninos_12,Personas (9 bloques),Numerica,27932,100.0
+n_adultos_mayores,Personas (9 bloques),Numerica,27932,100.0
+razon_dependencia_demografica,Personas (9 bloques),Numerica,27536,98.58227123013032
+pct_mujeres_hogar,Personas (9 bloques),Numerica,27932,100.0
+sexo_jefe,Personas (9 bloques),Categorica,27932,100.0
+edad_jefe,Personas (9 bloques),Numerica,27932,100.0
+tiene_conyuge_jefe,Personas (9 bloques),Numerica,27932,100.0
+nivel_educ_jefe,Personas (9 bloques),Categorica,27932,100.0
+nivel_educ_ordinal_jefe,Personas (9 bloques),Numerica,19998,71.59530287841902
+ocupado_jefe,Personas (9 bloques),Numerica,23027,82.4394959186596
+categoria_ocupacional_jefe,Personas (9 bloques),Categorica,13407,47.998711155663756
+horas_trabajo_jefe,Personas (9 bloques),Numerica,13165,47.13232135185451
+jornalero_jefe,Personas (9 bloques),Numerica,12408,44.422168122583415
+nivel_educ_max_hogar,Personas (9 bloques),Numerica,23053,82.53257912072175
+pct_adultos_alfabetizados,Personas (9 bloques),Numerica,27901,99.88901618215667
+tasa_asistencia_escolar,Personas (9 bloques),Numerica,14193,50.81268795646571
+tasa_ocupacion_hogar,Personas (9 bloques),Numerica,23323,83.49921237290563
+pct_adultos_fue_jornalero,Personas (9 bloques),Numerica,12732,45.582128025204064
+tuvo_evento_salud_jefe,Personas (9 bloques),Numerica,27270,97.62995847057138
+pct_ninos_con_discapacidad,Personas (9 bloques),Numerica,14233,50.95589288271517
+n_eventos_salud_hogar,Personas (9 bloques),Numerica,27932,100.0
+tuvo_hospitalizacion_hogar,Personas (9 bloques),Numerica,27932,100.0
+tasa_afiliacion_salud_hogar,Personas (9 bloques),Numerica,27898,99.87827581268796
+tiene_prepagada_hogar,Personas (9 bloques),Numerica,27932,100.0
+ahorra_jefe,Personas (9 bloques),Numerica,27252,97.56551625375913
+participa_organizacion_jefe,Personas (9 bloques),Numerica,27269,97.62637834741516
+n_tipos_organizacion_jefe,Personas (9 bloques),Numerica,27269,97.62637834741516
+cotiza_pension_jefe,Personas (9 bloques),Numerica,27269,97.62637834741516
+afiliado_pension_jefe,Personas (9 bloques),Numerica,11581,41.46140627237577
+afiliado_salud_laboral_jefe,Personas (9 bloques),Numerica,11581,41.46140627237577
+tasa_ahorro_hogar,Personas (9 bloques),Numerica,27795,99.50952312759559
+pct_hogar_participa_organizacion,Personas (9 bloques),Numerica,27815,99.58112559072032
+tasa_cotizacion_pension_hogar,Personas (9 bloques),Numerica,27815,99.58112559072032
+tasa_afiliacion_pension_hogar,Personas (9 bloques),Numerica,12670,45.360160389517404
+tasa_afiliacion_salud_laboral_hogar,Personas (9 bloques),Numerica,12670,45.360160389517404
+categoria_laboral_oit_jefe,Personas (9 bloques),Categorica,14860,53.20063010167549
+grado_educ_jefe,Personas (9 bloques),Numerica,18367,65.75612201059717
+medio_consiguio_jefe,Personas (9 bloques),Categorica,11734,42.00916511527997
+registro_mercantil_jefe,Personas (9 bloques),Categorica,3624,12.974366318201348
+n_empleados_jefe,Personas (9 bloques),Categorica,9140,32.72232564800229
+pct_ninos_no_estudia_razon_economica,Personas (9 bloques),Numerica,1308,4.68280108835744
+pct_ninos_recibio_beca_subsidio,Personas (9 bloques),Numerica,12525,44.841042531863096
+pct_ninos_credito_estudiar,Personas (9 bloques),Numerica,12525,44.841042531863096
+pct_ninos_apoyo_alimentario_escolar,Personas (9 bloques),Numerica,12512,44.79450093083202
+pct_ninos_apoyo_material_escolar,Personas (9 bloques),Numerica,12512,44.79450093083202
+tasa_control_preventivo_hogar,Personas (9 bloques),Numerica,27831,99.6384075612201
+pct_ninos_control_pediatrico,Personas (9 bloques),Numerica,15134,54.181583846484315
+tasa_planificacion_familiar,Personas (9 bloques),Numerica,27815,99.58112559072032
+pct_ninos_beneficiario_sss,Personas (9 bloques),Numerica,15134,54.181583846484315
+estado_civil_jefe,Personas (9 bloques),Categorica,27932,100.0
+etnia_jefe,Personas (9 bloques),Categorica,19473,69.71573822139482
+edad_union_jefe,Personas (9 bloques),Numerica,14953,53.5335815552055
+pct_ninos_padre_vivo,Personas (9 bloques),Numerica,20336,72.80538450522698
+pct_ninos_madre_viva,Personas (9 bloques),Numerica,20336,72.80538450522698
+pct_ninos_trabaja_otro_hogar,Personas (9 bloques),Numerica,12183,43.616640412430186
+tasa_participacion_civica_hogar,Personas (9 bloques),Numerica,27815,99.58112559072032
+percepcion_inseguridad_comunidad,Comunidades,Numerica,22210,79.51453530001432
+n_problemas_convivencia_comunidad,Comunidades,Numerica,10811,38.70471144207361
+problema_contaminacion_comunidad,Comunidades,Numerica,10811,38.70471144207361
+n_organizaciones_comunidad,Comunidades,Numerica,14234,50.9594730058714
+barrio_legal_comunidad,Comunidades,Numerica,10846,38.83001575254188
+problema_homicidios_comunidad,Comunidades,Numerica,15366,55.01217241873121
+riesgo_inundacion_comunidad,Comunidades,Numerica,17965,64.31691250179006
+acceso_agua_comunidad,Comunidades,Numerica,10849,38.840756122010596
+hay_desplazados_comunidad,Comunidades,Numerica,10811,38.70471144207361
+n_desplazados_comunidad,Comunidades,Numerica,5425,19.422168122583415
+tiene_puesto_salud_comunidad,Comunidades,Numerica,22248,79.6505799799513
+tiene_escuela_primaria_comunidad,Comunidades,Numerica,22248,79.6505799799513
+tiene_colegio_secundaria_comunidad,Comunidades,Numerica,22248,79.6505799799513
+tiene_transporte_publico_comunidad,Comunidades,Numerica,10849,38.840756122010596
+solidaridad_comunidad,Comunidades,Numerica,22238,79.61477874838894
+acude_justicia_formal_comunidad,Comunidades,Numerica,22260,79.69354145782614
+cortes_agua_comunidad,Comunidades,Numerica,10849,38.840756122010596
+n_obras_infraestructura_reciente_comunidad,Comunidades,Numerica,22248,79.6505799799513
+n_servicios_primera_infancia_comunidad,Comunidades,Numerica,22248,79.6505799799513
+n_espacios_publicos_comunidad,Comunidades,Numerica,10849,38.840756122010596
+n_acciones_conflicto_armado_comunidad,Comunidades,Numerica,19169,68.62738078189889
+tasa_vacunacion_basica_hogar,Ninos (6-9 anios),Numerica,3040,10.883574394959187
+tasa_control_crecimiento_hogar,Ninos (6-9 anios),Numerica,6223,22.279106401260204
+tasa_vacuna_fiebreamarilla_hogar,Ninos (6-9 anios),Numerica,5609,20.080910783330946
+tasa_asistencia_escolar_nino_hogar,Ninos (6-9 anios),Numerica,6218,22.26120578547902
+talla_promedio_nino_hogar,Ninos (6-9 anios),Numerica,6539,23.410425318630963
+peso_promedio_nino_hogar,Ninos (6-9 anios),Numerica,6541,23.417585564943433
+pct_ninos_oficios_hogar,Ninos (6-9 anios),Numerica,5537,19.823141916081912
+n_oficios_promedio_nino_hogar,Ninos (6-9 anios),Numerica,5537,19.823141916081912
+horas_oficio_promedio_nino_hogar,Ninos (6-9 anios),Numerica,5396,19.318344551052558
+pct_ninos_trabajo_remunerado_hogar,Ninos (6-9 anios),Numerica,8410,30.10883574394959
+indice_estimulacion_hogar_nino,Ninos (6-9 anios),Numerica,7301,26.138479163683233
+tvip_puntaje_directo_hogar,Ninos (6-9 anios),Numerica,12238,43.8135471860232
+pct_ninos_cuidado_terceros_hogar,Ninos (6-9 anios),Numerica,604,2.162394386366891
+total_choques_hogar,Choques,Numerica,27932,100.0
+tuvo_algun_choque_hogar,Choques,Numerica,27932,100.0
+n_tipos_choque_hogar,Choques,Numerica,27932,100.0
+tuvo_choque_salud_hogar,Choques,Numerica,27932,100.0
+tuvo_choque_economico_hogar,Choques,Numerica,27932,100.0
+tuvo_choque_patrimonial_hogar,Choques,Numerica,27932,100.0
+tuvo_choque_agropecuario_hogar,Choques,Numerica,12887,46.13704711442074
+tuvo_choque_familiar_hogar,Choques,Numerica,27932,100.0
+tuvo_choque_severo_hogar,Choques,Numerica,27932,100.0
+afrontamiento_erosivo_hogar,Choques,Numerica,13780,49.33409709294
+afrontamiento_protector_hogar,Choques,Numerica,13780,49.33409709294
+intensifico_trabajo_hogar,Choques,Numerica,13780,49.33409709294
+retiro_hijos_colegio_choque_hogar,Choques,Numerica,13780,49.33409709294
+redujo_alimentos_choque_hogar,Choques,Numerica,13780,49.33409709294
+se_endeudo_formal_choque_hogar,Choques,Numerica,13780,49.33409709294
+se_endeudo_informal_choque_hogar,Choques,Numerica,13780,49.33409709294
+no_ajusto_choque_hogar,Choques,Numerica,13780,49.33409709294
+tenencia_vivienda_hogar,Hogar/vivienda/activos,Categorica,27932,100.0
+tipo_vivienda_hogar,Hogar/vivienda/activos,Categorica,27932,100.0
+material_paredes_hogar,Hogar/vivienda/activos,Categorica,27932,100.0
+material_pisos_hogar,Hogar/vivienda/activos,Categorica,27932,100.0
+servicio_sanitario_hogar,Hogar/vivienda/activos,Categorica,27932,100.0
+obtencion_agua_hogar,Hogar/vivienda/activos,Categorica,27932,100.0
+energia_cocinan_hogar,Hogar/vivienda/activos,Categorica,27901,99.88901618215667
+eliminan_basura_hogar,Hogar/vivienda/activos,Categorica,27932,100.0
+estrato_hogar,Hogar/vivienda/activos,Numerica,14197,50.82700844909065
+estrato_verificado_hogar,Hogar/vivienda/activos,Numerica,23338,83.55291422024918
+n_hogares_comparte_vivienda_hogar,Hogar/vivienda/activos,Numerica,27932,100.0
+riqueza_pca_hogar,Hogar/vivienda/activos,Numerica,27932,100.0
+n_servicios_publicos_hogar,Hogar/vivienda/activos,Numerica,27932,100.0
+personas_por_cuarto_hogar,Hogar/vivienda/activos,Numerica,27932,100.0
+personas_por_dormitorio_hogar,Hogar/vivienda/activos,Numerica,27931,99.99641987684377
+n_bienes_durables_hogar,Hogar/vivienda/activos,Numerica,27932,100.0
+tiene_vehiculo_hogar,Hogar/vivienda/activos,Numerica,27932,100.0
+tiene_internet_hogar,Hogar/vivienda/activos,Numerica,27932,100.0
+n_activos_financieros_hogar,Hogar/vivienda/activos,Numerica,27932,100.0
+tiene_propiedad_rural_hogar,Hogar/vivienda/activos,Numerica,27932,100.0
+tiene_transporte_carga_hogar,Hogar/vivienda/activos,Numerica,23354,83.61019619074897
+tiene_ingreso_agropecuario_hogar,Hogar/vivienda/activos,Numerica,12887,46.13704711442074
+beneficiario_familias_accion_hogar,Hogar/vivienda/activos,Numerica,27932,100.0
+beneficiario_red_juntos_hogar,Hogar/vivienda/activos,Numerica,27932,100.0
+n_programas_sociales_hogar,Hogar/vivienda/activos,Numerica,27932,100.0
+beneficiario_algun_programa_hogar,Hogar/vivienda/activos,Numerica,27932,100.0
+tuvo_desastre_natural_hogar,Hogar/vivienda/activos,Numerica,19114,68.43047400830588
+financio_credito_formal_vivienda_hogar,Hogar/vivienda/activos,Numerica,14977,53.619504510955174
+financio_recursos_propios_vivienda_hogar,Hogar/vivienda/activos,Numerica,14977,53.619504510955174
+financio_subsidio_vivienda_hogar,Hogar/vivienda/activos,Numerica,12568,44.99498782758127
+financio_otra_fuente_vivienda_hogar,Hogar/vivienda/activos,Numerica,14977,53.619504510955174
+tiene_escritura_vivienda_hogar,Hogar/vivienda/activos,Numerica,7304,26.14921953315194
+tiene_titulo_baldio_hogar,Hogar/vivienda/activos,Numerica,12887,46.13704711442074
+valor_arriendo_pagado_hogar,Hogar/vivienda/activos,Numerica,6161,22.057138765573537
+tiene_deuda_hogar,Hogar/vivienda/activos,Numerica,27932,100.0
+deuda_formal_hogar,Hogar/vivienda/activos,Numerica,13721,49.12286982672204
+deuda_informal_hogar,Hogar/vivienda/activos,Numerica,13721,49.12286982672204
+recibio_ayuda_alimentos_hogar,Hogar/vivienda/activos,Numerica,27932,100.0
+recibio_ayuda_fam_colombia_hogar,Hogar/vivienda/activos,Numerica,27932,100.0
+recibio_ayuda_fam_exterior_hogar,Hogar/vivienda/activos,Numerica,27932,100.0
+recibio_ayuda_ong_hogar,Hogar/vivienda/activos,Numerica,27932,100.0
+recibio_ayuda_org_internacional_hogar,Hogar/vivienda/activos,Numerica,27932,100.0
+recibio_ayuda_religiosa_hogar,Hogar/vivienda/activos,Numerica,27932,100.0
+recibio_ayuda_desplazados_hogar,Hogar/vivienda/activos,Numerica,27932,100.0
+envio_ayuda_alimentos_hogar,Hogar/vivienda/activos,Numerica,27930,99.99283975368752
+envio_ayuda_fam_colombia_hogar,Hogar/vivienda/activos,Numerica,27930,99.99283975368752
+envio_ayuda_fam_exterior_hogar,Hogar/vivienda/activos,Numerica,27930,99.99283975368752
+envio_ayuda_otras_hogar,Hogar/vivienda/activos,Numerica,27930,99.99283975368752
+uso_ayuda_alimentos_hogar,Hogar/vivienda/activos,Numerica,11208,40.126020335099525
+uso_ayuda_salud_hogar,Hogar/vivienda/activos,Numerica,11208,40.126020335099525
+uso_ayuda_educacion_hogar,Hogar/vivienda/activos,Numerica,11208,40.126020335099525
+uso_ayuda_vivienda_hogar,Hogar/vivienda/activos,Numerica,11208,40.126020335099525
+n_tipos_ayuda_recibida_hogar,Hogar/vivienda/activos,Numerica,27932,100.0
+uso_ayuda_agropecuario_hogar,Hogar/vivienda/activos,Numerica,6790,24.30903623084634
+uso_ayuda_ahorrar_hogar,Hogar/vivienda/activos,Numerica,11208,40.126020335099525
+practica_religion_hogar,Hogar/vivienda/activos,Numerica,27932,100.0

@@ -1,0 +1,30 @@
+\begin{table}[H]
+  \centering
+  \caption{Cobertura de las fotos de Google Street View y su relación con la caída en pobreza, pobreza monetaria, 2013$\to$2016 (exploratorio).}
+  \label{tab:gsv_pobreza}
+  \footnotesize
+  \setlength{\tabcolsep}{6pt}
+  \begin{tabular}{lcc}
+    \toprule
+    \textbf{Indicador} & \textbf{Valor} & $\boldsymbol{n}$ \\
+    \midrule
+    \multicolumn{3}{l}{\textit{DMSP-OLS medio según cobertura de fotos}} \\
+    Sin foto & 7.0 & 2{,}188 \\
+    Con foto fuera de la ventana de fechas & 42.0 & 5{,}407 \\
+    Con foto dentro de la ventana (muestra usada) & 42.3 & 830 \\
+    \addlinespace
+    \multicolumn{3}{l}{\textit{Caer en pobreza: regresión logística conjunta (IC95\%)}} \\
+    Primer componente de la foto (Places365) & +0.509 [+0.17, +0.86] & 283 \\
+    DMSP-OLS & $-$0.049 [$-$0.35, +0.27] & 283 \\
+    \addlinespace
+    \multicolumn{3}{l}{\textit{Caer en pobreza: AUC-ROC con validación cruzada}} \\
+    Solo fotos & 0.619 & 443 \\
+    Fotos y DMSP-OLS & 0.612 & 443 \\
+    Cambio (IC95\%) & $-$0.007 [$-$0.021, +0.006] & 443 \\
+    \bottomrule
+  \end{tabular}
+  \begin{minipage}{0.95\textwidth}
+    \vspace{4pt}
+    \footnotesize \textit{Nota:} Hogares con foto dentro de la ventana de fechas: los que tienen una foto de Street View tomada cerca de la ola de 2013. No hay fotos anteriores a 2012, de modo que no es posible entrenar con 2010 y evaluar en 2016 como en el resto del documento: la regresión logística se estima sobre los hogares del conjunto de prueba con foto, y el AUC-ROC, con validación cruzada de 5 particiones dentro de esa muestra, con los primeros cinco componentes de Places365. Fuente: cálculos propios.
+  \end{minipage}
+\end{table}
