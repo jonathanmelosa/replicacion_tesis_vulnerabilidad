@@ -7,5 +7,7 @@ authors:
     given-names: "Jonathan"
     affiliation: "Universidad de los Andes"
 license: MIT
+doi: "10.5281/zenodo.23318180"
+repository-code: "https://github.com/jonathanmelosa/replicacion_tesis_vulnerabilidad"
 version: "1.0.0"
 date-released: "2026-10-12"
