@@ -26,12 +26,13 @@ El autor tiene acceso legítimo a todas las fuentes usadas y la autorización pa
 
 | Fuente | Acceso | Incluida en el paquete |
 |---|---|---|
-| **ELCA 2010, 2013 y 2016**, Centro de Estudios sobre Desarrollo Económico (CEDE), Universidad de los Andes | Pública. Repositorio de datos de la Universidad de los Andes, DOI [10.57924/DPF0M5](https://doi.org/10.57924/DPF0M5) (2010), [10.57924/DE9LP7](https://doi.org/10.57924/DE9LP7) (2013) y [10.57924/BLUILW](https://doi.org/10.57924/BLUILW) (2016). `src/01_download/01_descarga_ELCA/00_descarga_API_bases.py` las descarga sin credenciales. | No (se descargan) |
+| **ELCA 2010, 2013 y 2016**, Centro de Estudios sobre Desarrollo Económico (CEDE), Universidad de los Andes | Pública. Repositorio de datos de la Universidad de los Andes, DOI [10.57924/DPF0M5](https://doi.org/10.57924/DPF0M5) (2010), [10.57924/DE9LP7](https://doi.org/10.57924/DE9LP7) (2013) y [10.57924/BLUILW](https://doi.org/10.57924/BLUILW) (2016). Ver "Descarga de la ELCA" en las instrucciones. | No |
 | **Coordenadas de los hogares de la ELCA** | Restringidas. Solo pueden consultarse en la sala de procesamiento de datos del CEDE, Universidad de los Andes, previa solicitud. | No |
 | **Variables geoespaciales por hogar** (DMSP-OLS, ALOS PALSAR, Landsat 5 TM en un círculo de ~930 m alrededor de la vivienda) | Restringidas: se construyen dentro de la sala de datos con el código de `sala_datos/`. El nivel `completo` espera el resultado en `data/processed/SALE_13082026/variables_geoespaciales_unificadas.parquet`. | No |
 | **Imágenes satelitales**: DMSP-OLS (serie temporal v4, NOAA NGDC), ALOS PALSAR (mosaico anual, JAXA), Landsat 5 TM (Collection 2, nivel 2, USGS) | Públicas, a través de Google Earth Engine (requiere una cuenta de servicio propia). | No |
 | **Fondo de luces nocturnas del mapa** (serie armonizada CCNL 1992–2013, DOI [10.5281/zenodo.6644980](https://doi.org/10.5281/zenodo.6644980)) | Pública. `src/02_build/eda_dmsp_fondo_mapa.py` la procesa. | Sí, el recorte para Colombia (`data/interim/geo_referencia/fondo_dmsp_colombia_2010.npz`) |
 | **Google Street View** | Requiere una clave de la API de Google y las coordenadas de los hogares. Las condiciones de uso no permiten redistribuir las imágenes. | No; solo resultados agregados |
+| **IPC del DANE** (variación mensual, `docs/fuentes_dane/IPC_Variacion.xls`) y **líneas de pobreza del DANE** (en `src/04_features/config_dane.py`, tomadas de los boletines oficiales citados en `docs/fuentes_dane/README.md`) | Públicos | Sí, el IPC |
 | **Límites administrativos GADM 4.1** | Públicos, pero su licencia no permite redistribuirlos. `src/descargar_gadm.py` los descarga. | No (se descargan) |
 
 ### Resultados agregados incluidos
@@ -73,7 +74,17 @@ pip install -r requirements.txt
 python run_all.py agregados    # o: elca, completo
 ```
 
+### Descarga de la ELCA (niveles `elca` y `completo`)
+
+`src/01_download/01_descarga_ELCA/00_descarga_API_bases.py` descarga las tres olas por el API del repositorio de la Universidad de los Andes. Desde octubre de 2026 el sitio exige una verificación antibots que impide la descarga automática; si el script no obtiene archivos, descárguelos desde el navegador en los tres DOI de la tabla de fuentes y descomprímalos en `data/interim/raw/elca_2010/`, `data/interim/raw/elca_2013/` y `data/interim/raw/elca_2016/` (los archivos `*-csv.tab` de cada ola). Luego corra `run_all.py elca`; el primer paso no encontrará nada nuevo que descargar y los siguientes usarán esos archivos.
+
+### Archivos de apoyo
+
+`docs/variable_audit/*_construccion.csv` es la clasificación de cada columna de los módulos de la ELCA según su cobertura en las tres olas (auditoría de calidad descrita en el Anexo); la usa la Tabla 18. No contiene datos de hogares.
+
 Las tablas quedan en `paper/tables/` y las figuras en `outputs/figures/` y `paper/figures/`.
+
+**Verificación:** el nivel `agregados` reproduce idénticas las 31 tablas y 14 figuras que genera, y el nivel `elca`, corrido desde los microdatos crudos, reproduce idénticos todos los resultados agregados de ese nivel y la Tabla 18.
 
 ## Tablas y figuras
 
